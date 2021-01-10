@@ -1,7 +1,6 @@
 package ae.goldenrealestate.endpoints.rest.impl;
 
 import ae.goldenrealestate.data.model.BuildingEntity;
-import ae.goldenrealestate.data.model.TodoEntity;
 import ae.goldenrealestate.service.BuildingService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -14,7 +13,7 @@ import java.util.List;
 
 @RestController
 @CrossOrigin(origins = { "http://localhost:3000", "http://localhost:4200" })
-public class BuildingController extends AssetController {
+public class BuildingController extends AssetResource {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(BuildingController.class.getName());
 

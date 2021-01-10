@@ -1,17 +1,19 @@
 package ae.goldenrealestate.service;
 
-import ae.goldenrealestate.data.model.BuildingEntity;
 import ae.goldenrealestate.data.model.TodoEntity;
-import ae.goldenrealestate.repository.BuildingRepository;
 import ae.goldenrealestate.repository.TodoRepository;
+import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 
 import java.util.List;
+import java.util.Optional;
 
 @Configuration
 public class TodoService {
+
+    private static final Logger LOGGER = LoggerFactory.getLogger(TodoService.class);
 
     @Autowired
     TodoRepository todoRepository;
@@ -21,8 +23,11 @@ public class TodoService {
         todoRepository.save(todoEntity);
     }
 
-    public void deleteTodo(long id) {
+    public Optional<TodoEntity> deleteTodoById(long id) {
+        Optional<TodoEntity> todoEntity = todoRepository.findById(id);
+        LOGGER.info("Todo findByid {} ", todoEntity);
         todoRepository.deleteById(id);
+        return todoEntity;
     }
 
     public List<TodoEntity> getAllTodos() {
@@ -30,8 +35,7 @@ public class TodoService {
         todoEntity.setDescription("Nake sure you ckean the facade");
         todoEntity.setName("Clean Facade");
         addTodo(todoEntity);
-        System.out.println("Added Todo " + todoEntity);
-        LoggerFactory.getLogger(TodoService.class).info(" Todo Added {} ", todoEntity);
+        LOGGER.info("Todo Added {} ", todoEntity);
         return todoRepository.findAll();
     }
 }

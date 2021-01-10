@@ -9,6 +9,7 @@ class ListTodoComponent extends Component {
             message: null
         }
         this.refreshTodos = this.refreshTodos.bind(this)
+        this.deleteTodoClicked = this.deleteTodoClicked.bind(this)
     }
 
     componentDidMount() {
@@ -25,17 +26,29 @@ class ListTodoComponent extends Component {
             )
     }
 
+    deleteTodoClicked(id) {
+        TodoListServices.deleteTodo(id)
+            .then(
+                response => {
+                    this.setState({ message: `Delete of Todo ${id} Successful` })
+                    this.refreshTodos()
+                }
+            )
+    
+    }
+
     render() {
         return (
             <div className="container">
-                <h3>All Todos</h3>
+                {this.state.message && <div class="alert alert-success">{this.state.message}</div>}
                 <div className="container">
                     <table className="table">
                         <thead>
                             <tr>
                                 <th>Id</th>
-                                <th>Todo Name</th>
-                                <th>Todo Description</th>
+                                <th>Todo</th>
+                                <th>Details</th>
+                                <th>Delete</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -46,6 +59,7 @@ class ListTodoComponent extends Component {
                                             <td>{todo.id}</td>
                                             <td>{todo.name}</td>
                                             <td>{todo.description}</td>
+                                            <td><button className="btn btn-warning" onClick={() => this.deleteTodoClicked(todo.id)}>Delete</button></td>
                                         </tr>
                                 )
                             }

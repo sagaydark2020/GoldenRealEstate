@@ -1,11 +1,11 @@
 package ae.goldenrealestate.bootstrap.GoldenRealEstateMain;
 
-import ae.goldenrealestate.endpoints.rest.impl.AssetController;
+import ae.goldenrealestate.endpoints.rest.impl.AssetResource;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Import;
 
-@Import(AssetController.class)
+@Import(AssetResource.class)
 @SpringBootApplication
 public class BootstrapTodoApplication {
 

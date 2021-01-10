@@ -11,5 +11,5 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @ComponentScan(basePackageClasses = {RestConfigController.class})
 @Import({ServiceConfig.class})
 @EnableTransactionManagement
-public class AssetController {
+public class AssetResource {
 }
