@@ -3,14 +3,18 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
-    <groupId>groupId</groupId>
-    <artifactId>GoldenRealEstate</artifactId>
+    <packaging>pom</packaging>
+    <groupId>ae.goldenrealestate.todo</groupId>
+    <artifactId>GoldenRealEstateToDo</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <plugin>
-        <groupId>org.eclipse.jetty</groupId>
-        <artifactId>jetty-maven-plugin</artifactId>
-        <version>9.3.11.v20160721</version>
-    </plugin>
-    
+
+    <modules>
+        <module>todo-app-bootstrap</module>
+        <module>todo-app-rest-endpoints</module>
+    </modules>
+    <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+
 </project>
