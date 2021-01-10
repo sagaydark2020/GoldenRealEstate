@@ -12,6 +12,7 @@
         <module>todo-app-bootstrap</module>
         <module>todo-app-rest-endpoints</module>
         <module>todo-app-domain-models</module>
+        <module>todo-app-repository-service</module>
     </modules>
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
