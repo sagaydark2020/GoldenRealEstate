@@ -1196,3 +1196,135 @@ ae.goldenrealestate.endpoints.rest.impl.BuildingController#getAllBuildings() map
 2021-01-10 21:46:32,868 INFO org.springframework.boot.web.embedded.jetty.JettyWebServer [main] Jetty started on port(s) 8080 (http/1.1) with context path '/'
 2021-01-10 21:46:32,899 INFO org.springframework.boot.StartupInfoLogger [main] Started BootstrapTodoApplication in 9.175 seconds (JVM running for 10.233)
 2021-01-10 21:46:38,058 INFO ae.goldenrealestate.endpoints.rest.impl.BuildingController [qtp581364120-23] something
+2021-01-10 21:51:08,155 INFO org.springframework.boot.StartupInfoLogger [main] Starting BootstrapTodoApplication using Java 11.0.8 on sagayaraj with PID 4848 (C:\SagayHome\PersonalDev\ClientProjects\GoldenRealEstate\GoldenRealEstate\todo-app-bootstrap\target\classes started by sagayaraj in C:\SagayHome\PersonalDev\ClientProjects\GoldenRealEstate)
+2021-01-10 21:51:08,171 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.4.1, Spring v5.3.2
+2021-01-10 21:51:08,171 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-01-10 21:51:09,460 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-01-10 21:51:09,558 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 86 ms. Found 1 JPA repository interfaces.
+2021-01-10 21:51:10,655 INFO org.eclipse.jetty.util.log.Log [main] Logging initialized @5904ms to org.eclipse.jetty.util.log.Slf4jLog
+2021-01-10 21:51:11,301 INFO org.springframework.boot.web.embedded.jetty.JettyServletWebServerFactory [main] Server initialized with port: 8080
+2021-01-10 21:51:11,317 INFO org.eclipse.jetty.server.Server [main] jetty-9.4.35.v20201120; built: 2020-11-20T21:17:03.964Z; git: bdc54f03a5e0a7e280fab27f55c3c75ee8da89fb; jvm 11.0.8+10-LTS
+2021-01-10 21:51:11,393 INFO org.eclipse.jetty.server.handler.ContextHandler$Context [main] Initializing Spring embedded WebApplicationContext
+2021-01-10 21:51:11,393 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 3091 ms
+2021-01-10 21:51:11,680 INFO org.eclipse.jetty.server.session.DefaultSessionIdManager [main] DefaultSessionIdManager workerName=node0
+2021-01-10 21:51:11,680 INFO org.eclipse.jetty.server.session.DefaultSessionIdManager [main] No SessionScavenger set, using defaults
+2021-01-10 21:51:11,680 INFO org.eclipse.jetty.server.session.HouseKeeper [main] node0 Scavenging every 660000ms
+2021-01-10 21:51:11,702 INFO org.eclipse.jetty.server.handler.ContextHandler [main] Started o.s.b.w.e.j.JettyEmbeddedWebAppContext@74d6736{application,/,[file:///C:/Users/sagayaraj/AppData/Local/Temp/jetty-docbase.8080.1557714982430404224/],AVAILABLE}
+2021-01-10 21:51:11,702 INFO org.eclipse.jetty.server.Server [main] Started @6961ms
+2021-01-10 21:51:12,103 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-01-10 21:51:12,267 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.25.Final
+2021-01-10 21:51:12,566 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-01-10 21:51:12,783 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2021-01-10 21:51:13,009 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-01-10 21:51:13,072 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-01-10 21:51:14,624 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-01-10 21:51:14,635 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-01-10 21:51:15,308 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-01-10 21:51:15,572 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-10 21:51:16,026 INFO org.eclipse.jetty.server.handler.ContextHandler$Context [main] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-10 21:51:16,042 INFO org.springframework.web.servlet.FrameworkServlet [main] Initializing Servlet 'dispatcherServlet'
+2021-01-10 21:51:16,042 INFO org.springframework.web.servlet.FrameworkServlet [main] Completed initialization in 0 ms
+2021-01-10 21:51:16,073 INFO org.eclipse.jetty.server.AbstractConnector [main] Started ServerConnector@6fa0450e{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2021-01-10 21:51:16,073 INFO org.springframework.boot.web.embedded.jetty.JettyWebServer [main] Jetty started on port(s) 8080 (http/1.1) with context path '/'
+2021-01-10 21:51:16,089 INFO org.springframework.boot.StartupInfoLogger [main] Started BootstrapTodoApplication in 9.5 seconds (JVM running for 11.352)
+2021-01-10 21:51:30,071 INFO ae.goldenrealestate.endpoints.rest.impl.BuildingController [qtp1372150180-23] something
+2021-01-10 21:51:30,182 INFO ae.goldenrealestate.service.BuildingService [qtp1372150180-23]  Added Building %d
+2021-01-10 21:53:18,514 INFO org.springframework.boot.StartupInfoLogger [main] Starting BootstrapTodoApplication using Java 11.0.8 on sagayaraj with PID 3344 (C:\SagayHome\PersonalDev\ClientProjects\GoldenRealEstate\GoldenRealEstate\todo-app-bootstrap\target\classes started by sagayaraj in C:\SagayHome\PersonalDev\ClientProjects\GoldenRealEstate)
+2021-01-10 21:53:18,530 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.4.1, Spring v5.3.2
+2021-01-10 21:53:18,530 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-01-10 21:53:19,792 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-01-10 21:53:19,893 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 88 ms. Found 1 JPA repository interfaces.
+2021-01-10 21:53:21,153 INFO org.eclipse.jetty.util.log.Log [main] Logging initialized @4924ms to org.eclipse.jetty.util.log.Slf4jLog
+2021-01-10 21:53:21,919 INFO org.springframework.boot.web.embedded.jetty.JettyServletWebServerFactory [main] Server initialized with port: 8080
+2021-01-10 21:53:21,919 INFO org.eclipse.jetty.server.Server [main] jetty-9.4.35.v20201120; built: 2020-11-20T21:17:03.964Z; git: bdc54f03a5e0a7e280fab27f55c3c75ee8da89fb; jvm 11.0.8+10-LTS
+2021-01-10 21:53:22,015 INFO org.eclipse.jetty.server.handler.ContextHandler$Context [main] Initializing Spring embedded WebApplicationContext
+2021-01-10 21:53:22,015 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 3370 ms
+2021-01-10 21:53:22,313 INFO org.eclipse.jetty.server.session.DefaultSessionIdManager [main] DefaultSessionIdManager workerName=node0
+2021-01-10 21:53:22,313 INFO org.eclipse.jetty.server.session.DefaultSessionIdManager [main] No SessionScavenger set, using defaults
+2021-01-10 21:53:22,323 INFO org.eclipse.jetty.server.session.HouseKeeper [main] node0 Scavenging every 600000ms
+2021-01-10 21:53:22,344 INFO org.eclipse.jetty.server.handler.ContextHandler [main] Started o.s.b.w.e.j.JettyEmbeddedWebAppContext@777d0bc3{application,/,[file:///C:/Users/sagayaraj/AppData/Local/Temp/jetty-docbase.8080.1560310679872046272/],AVAILABLE}
+2021-01-10 21:53:22,344 INFO org.eclipse.jetty.server.Server [main] Started @6119ms
+2021-01-10 21:53:22,720 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-01-10 21:53:22,824 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.25.Final
+2021-01-10 21:53:23,093 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-01-10 21:53:23,309 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2021-01-10 21:53:23,526 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-01-10 21:53:23,566 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-01-10 21:53:24,996 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-01-10 21:53:25,010 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-01-10 21:53:25,642 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-01-10 21:53:25,875 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-10 21:53:26,325 INFO org.eclipse.jetty.server.handler.ContextHandler$Context [main] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-10 21:53:26,325 INFO org.springframework.web.servlet.FrameworkServlet [main] Initializing Servlet 'dispatcherServlet'
+2021-01-10 21:53:26,325 INFO org.springframework.web.servlet.FrameworkServlet [main] Completed initialization in 0 ms
+2021-01-10 21:53:26,374 INFO org.eclipse.jetty.server.AbstractConnector [main] Started ServerConnector@7f93dd4e{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2021-01-10 21:53:26,381 INFO org.springframework.boot.web.embedded.jetty.JettyWebServer [main] Jetty started on port(s) 8080 (http/1.1) with context path '/'
+2021-01-10 21:53:26,394 INFO org.springframework.boot.StartupInfoLogger [main] Started BootstrapTodoApplication in 9.103 seconds (JVM running for 10.163)
+2021-01-10 21:53:34,439 INFO ae.goldenrealestate.endpoints.rest.impl.BuildingController [qtp1684802151-24] something
+2021-01-10 21:53:34,608 INFO ae.goldenrealestate.service.BuildingService [qtp1684802151-24]  Added Building %s
+2021-01-10 21:55:29,381 INFO org.springframework.boot.StartupInfoLogger [main] Starting BootstrapTodoApplication using Java 11.0.8 on sagayaraj with PID 11236 (C:\SagayHome\PersonalDev\ClientProjects\GoldenRealEstate\GoldenRealEstate\todo-app-bootstrap\target\classes started by sagayaraj in C:\SagayHome\PersonalDev\ClientProjects\GoldenRealEstate)
+2021-01-10 21:55:29,394 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.4.1, Spring v5.3.2
+2021-01-10 21:55:29,395 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-01-10 21:55:30,623 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-01-10 21:55:30,739 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 96 ms. Found 1 JPA repository interfaces.
+2021-01-10 21:55:31,942 INFO org.eclipse.jetty.util.log.Log [main] Logging initialized @4838ms to org.eclipse.jetty.util.log.Slf4jLog
+2021-01-10 21:55:32,611 INFO org.springframework.boot.web.embedded.jetty.JettyServletWebServerFactory [main] Server initialized with port: 8080
+2021-01-10 21:55:32,623 INFO org.eclipse.jetty.server.Server [main] jetty-9.4.35.v20201120; built: 2020-11-20T21:17:03.964Z; git: bdc54f03a5e0a7e280fab27f55c3c75ee8da89fb; jvm 11.0.8+10-LTS
+2021-01-10 21:55:32,728 INFO org.eclipse.jetty.server.handler.ContextHandler$Context [main] Initializing Spring embedded WebApplicationContext
+2021-01-10 21:55:32,729 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 3227 ms
+2021-01-10 21:55:33,033 INFO org.eclipse.jetty.server.session.DefaultSessionIdManager [main] DefaultSessionIdManager workerName=node0
+2021-01-10 21:55:33,034 INFO org.eclipse.jetty.server.session.DefaultSessionIdManager [main] No SessionScavenger set, using defaults
+2021-01-10 21:55:33,038 INFO org.eclipse.jetty.server.session.HouseKeeper [main] node0 Scavenging every 660000ms
+2021-01-10 21:55:33,059 INFO org.eclipse.jetty.server.handler.ContextHandler [main] Started o.s.b.w.e.j.JettyEmbeddedWebAppContext@39ffda4a{application,/,[file:///C:/Users/sagayaraj/AppData/Local/Temp/jetty-docbase.8080.136473289870223641/],AVAILABLE}
+2021-01-10 21:55:33,061 INFO org.eclipse.jetty.server.Server [main] Started @5960ms
+2021-01-10 21:55:33,416 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-01-10 21:55:33,575 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.25.Final
+2021-01-10 21:55:33,913 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-01-10 21:55:34,209 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2021-01-10 21:55:34,409 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-01-10 21:55:34,442 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-01-10 21:55:35,861 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-01-10 21:55:35,874 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-01-10 21:55:36,591 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-01-10 21:55:36,804 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-10 21:55:37,218 INFO org.eclipse.jetty.server.handler.ContextHandler$Context [main] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-10 21:55:37,219 INFO org.springframework.web.servlet.FrameworkServlet [main] Initializing Servlet 'dispatcherServlet'
+2021-01-10 21:55:37,220 INFO org.springframework.web.servlet.FrameworkServlet [main] Completed initialization in 1 ms
+2021-01-10 21:55:37,270 INFO org.eclipse.jetty.server.AbstractConnector [main] Started ServerConnector@6535117e{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2021-01-10 21:55:37,272 INFO org.springframework.boot.web.embedded.jetty.JettyWebServer [main] Jetty started on port(s) 8080 (http/1.1) with context path '/'
+2021-01-10 21:55:37,293 INFO org.springframework.boot.StartupInfoLogger [main] Started BootstrapTodoApplication in 9.14 seconds (JVM running for 10.192)
+2021-01-10 21:55:44,724 INFO ae.goldenrealestate.endpoints.rest.impl.BuildingController [qtp1184248953-24] something
+2021-01-10 21:55:44,834 INFO ae.goldenrealestate.service.BuildingService [qtp1184248953-24] Buildings Added ae.goldenrealestate.data.model.BuildingEntity@758f0195 
+2021-01-10 21:58:38,678 INFO org.springframework.boot.StartupInfoLogger [main] Starting BootstrapTodoApplication using Java 11.0.8 on sagayaraj with PID 20288 (C:\SagayHome\PersonalDev\ClientProjects\GoldenRealEstate\GoldenRealEstate\todo-app-bootstrap\target\classes started by sagayaraj in C:\SagayHome\PersonalDev\ClientProjects\GoldenRealEstate)
+2021-01-10 21:58:38,686 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.4.1, Spring v5.3.2
+2021-01-10 21:58:38,688 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-01-10 21:58:39,884 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-01-10 21:58:39,986 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 82 ms. Found 1 JPA repository interfaces.
+2021-01-10 21:58:41,184 INFO org.eclipse.jetty.util.log.Log [main] Logging initialized @4783ms to org.eclipse.jetty.util.log.Slf4jLog
+2021-01-10 21:58:41,827 INFO org.springframework.boot.web.embedded.jetty.JettyServletWebServerFactory [main] Server initialized with port: 8080
+2021-01-10 21:58:41,827 INFO org.eclipse.jetty.server.Server [main] jetty-9.4.35.v20201120; built: 2020-11-20T21:17:03.964Z; git: bdc54f03a5e0a7e280fab27f55c3c75ee8da89fb; jvm 11.0.8+10-LTS
+2021-01-10 21:58:41,911 INFO org.eclipse.jetty.server.handler.ContextHandler$Context [main] Initializing Spring embedded WebApplicationContext
+2021-01-10 21:58:41,911 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 3113 ms
+2021-01-10 21:58:42,197 INFO org.eclipse.jetty.server.session.DefaultSessionIdManager [main] DefaultSessionIdManager workerName=node0
+2021-01-10 21:58:42,197 INFO org.eclipse.jetty.server.session.DefaultSessionIdManager [main] No SessionScavenger set, using defaults
+2021-01-10 21:58:42,212 INFO org.eclipse.jetty.server.session.HouseKeeper [main] node0 Scavenging every 660000ms
+2021-01-10 21:58:42,231 INFO org.eclipse.jetty.server.handler.ContextHandler [main] Started o.s.b.w.e.j.JettyEmbeddedWebAppContext@7102ac3e{application,/,[file:///C:/Users/sagayaraj/AppData/Local/Temp/jetty-docbase.8080.359088546523252049/],AVAILABLE}
+2021-01-10 21:58:42,231 INFO org.eclipse.jetty.server.Server [main] Started @5840ms
+2021-01-10 21:58:42,593 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-01-10 21:58:42,731 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.25.Final
+2021-01-10 21:58:43,015 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-01-10 21:58:43,356 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2021-01-10 21:58:43,583 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-01-10 21:58:43,630 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-01-10 21:58:45,166 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-01-10 21:58:45,181 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-01-10 21:58:45,885 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-01-10 21:58:46,124 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-10 21:58:46,585 INFO org.eclipse.jetty.server.handler.ContextHandler$Context [main] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-10 21:58:46,586 INFO org.springframework.web.servlet.FrameworkServlet [main] Initializing Servlet 'dispatcherServlet'
+2021-01-10 21:58:46,587 INFO org.springframework.web.servlet.FrameworkServlet [main] Completed initialization in 1 ms
+2021-01-10 21:58:46,644 INFO org.eclipse.jetty.server.AbstractConnector [main] Started ServerConnector@446626a7{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2021-01-10 21:58:46,646 INFO org.springframework.boot.web.embedded.jetty.JettyWebServer [main] Jetty started on port(s) 8080 (http/1.1) with context path '/'
+2021-01-10 21:58:46,667 INFO org.springframework.boot.StartupInfoLogger [main] Started BootstrapTodoApplication in 9.22 seconds (JVM running for 10.269)
+2021-01-10 21:58:47,584 INFO ae.goldenrealestate.endpoints.rest.impl.BuildingController [qtp1040172900-23] something
+2021-01-10 21:58:47,743 INFO ae.goldenrealestate.service.BuildingService [qtp1040172900-23] Buildings Added BuildingEntity{buildingId=5, buildingName='aldar hq', buildingLocation='abu dhabi'} 

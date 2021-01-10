@@ -2,6 +2,7 @@ package ae.goldenrealestate.service;
 
 import ae.goldenrealestate.data.model.BuildingEntity;
 import ae.goldenrealestate.repository.BuildingRepository;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 
@@ -28,6 +29,7 @@ public class BuildingService {
         buildingEntity.setBuildingName("aldar hq");
         addBuilding(buildingEntity);
         System.out.println("Added building " + buildingEntity);
+        LoggerFactory.getLogger(BuildingRepository.class).info("Buildings Added {} ", buildingEntity);
         return buildingRepository.findAll();
     }
 }
