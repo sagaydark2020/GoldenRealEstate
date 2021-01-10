@@ -9,7 +9,7 @@ public class BuildingEntity implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long buildingId;
+    private long id;
 
     @Column(name = "buildingName")
     private String buildingName;
@@ -33,25 +33,32 @@ public class BuildingEntity implements Serializable {
         this.buildingLocation = buildingLocation;
     }
 
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (!(o instanceof BuildingEntity)) return false;
         BuildingEntity that = (BuildingEntity) o;
-        return buildingId == that.buildingId &&
-                Objects.equals(buildingName, that.buildingName) &&
+        return Objects.equals(buildingName, that.buildingName) &&
                 Objects.equals(buildingLocation, that.buildingLocation);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(buildingId, buildingName, buildingLocation);
+        return Objects.hash(buildingName, buildingLocation);
     }
 
     @Override
     public String toString() {
         return "BuildingEntity{" +
-                "buildingId=" + buildingId +
+                "id=" + id +
                 ", buildingName='" + buildingName + '\'' +
                 ", buildingLocation='" + buildingLocation + '\'' +
                 '}';

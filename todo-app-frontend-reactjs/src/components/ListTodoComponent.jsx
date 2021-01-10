@@ -3,7 +3,11 @@ import TodoListServices from '../service/TodoListServices';
 class ListTodoComponent extends Component {
 
     constructor(props) {
-        super(props)
+        super(props)        
+        this.state = {
+            todos: [],
+            message: null
+        }
         this.refreshTodos = this.refreshTodos.bind(this)
     }
 
@@ -16,9 +20,11 @@ class ListTodoComponent extends Component {
             .then(
                 response => {
                     console.log(response);
+                    this.setState({ todos: response.data })
                 }
             )
     }
+
     render() {
         return (
             <div className="container">
@@ -28,14 +34,21 @@ class ListTodoComponent extends Component {
                         <thead>
                             <tr>
                                 <th>Id</th>
+                                <th>Todo Name</th>
                                 <th>Todo Description</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>Learn Full stack with Spring Boot and Angular</td>
-                            </tr>
+                            {
+                                this.state.todos.map(
+                                    todo =>
+                                        <tr key={todo.id}>
+                                            <td>{todo.id}</td>
+                                            <td>{todo.name}</td>
+                                            <td>{todo.description}</td>
+                                        </tr>
+                                )
+                            }
                         </tbody>
                     </table>
                 </div>
