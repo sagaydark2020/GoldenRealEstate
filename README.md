@@ -16,3 +16,4 @@ Person should be managed as entity interacting on the category
 Project status should be visible per building and per person it is assigned to
 
 
+Version 2.0
