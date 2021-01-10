@@ -12,6 +12,9 @@ Person should be managed as entity interacting on the category
 Project status should be visible per building and per person it is assigned to
 
 Technologies
+
 Frontend : Reactjs, Bootstrap, JS/HTML
+
 Backend  : Spring Rest, boot, jpa 
+
 Version 2.0
