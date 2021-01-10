@@ -1,26 +1,25 @@
-package ae.goldenrealestate.endpoints.rest;
+package ae.goldenrealestate.endpoints.rest.impl;
 
-import com.sun.org.slf4j.internal.Logger;
-import com.sun.org.slf4j.internal.LoggerFactory;
-import org.springframework.context.annotation.ComponentScan;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+
 import java.util.List;
 
-@ComponentScan("ae.goldenrealestate")
 @RestController
 @RequestMapping(value = "/api")
-public class BuildingController {
+public class BuildingController extends AssetController {
 
-    private static final Logger logger = LoggerFactory.getLogger(BuildingController.class.getClass());
+    private static final Logger LOGGER = LoggerFactory.getLogger(BuildingController.class.getName());
 
     @GetMapping("/buildings")
     public ResponseEntity<List> getBuildings(@RequestParam(required = false) String title) {
-        logger.debug("GetBuildings API Invoked");
+        LOGGER.info("Let us log something 33");
         return new ResponseEntity<List>(HttpStatus.OK);
     }
 

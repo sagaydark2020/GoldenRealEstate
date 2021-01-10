@@ -25,6 +25,11 @@
             <version>5.0.6.RELEASE</version>
             <scope>compile</scope>
         </dependency>
+        <dependency>
+                    <version>2.4.1</version>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-logging</artifactId>
+        </dependency>
     </dependencies>
 
 

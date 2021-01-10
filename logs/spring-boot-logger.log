@@ -1,0 +1,42 @@
+2021-01-10 19:28:31,196 INFO org.springframework.boot.StartupInfoLogger [main] Starting BootstrapTodoApplication using Java 11.0.8 on sagayaraj with PID 6944 (C:\SagayHome\PersonalDev\ClientProjects\GoldenRealEstate\GoldenRealEstate\todo-app-bootstrap\target\classes started by sagayaraj in C:\SagayHome\PersonalDev\ClientProjects\GoldenRealEstate)
+2021-01-10 19:28:31,203 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.4.1, Spring v5.3.2
+2021-01-10 19:28:31,204 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-01-10 19:28:32,592 INFO org.eclipse.jetty.util.log.Log [main] Logging initialized @3453ms to org.eclipse.jetty.util.log.Slf4jLog
+2021-01-10 19:28:33,259 INFO org.springframework.boot.web.embedded.jetty.JettyServletWebServerFactory [main] Server initialized with port: 8080
+2021-01-10 19:28:33,275 INFO org.eclipse.jetty.server.Server [main] jetty-9.4.35.v20201120; built: 2020-11-20T21:17:03.964Z; git: bdc54f03a5e0a7e280fab27f55c3c75ee8da89fb; jvm 11.0.8+10-LTS
+2021-01-10 19:28:33,354 INFO org.eclipse.jetty.server.handler.ContextHandler$Context [main] Initializing Spring embedded WebApplicationContext
+2021-01-10 19:28:33,355 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2021 ms
+2021-01-10 19:28:33,588 INFO org.eclipse.jetty.server.session.DefaultSessionIdManager [main] DefaultSessionIdManager workerName=node0
+2021-01-10 19:28:33,594 INFO org.eclipse.jetty.server.session.DefaultSessionIdManager [main] No SessionScavenger set, using defaults
+2021-01-10 19:28:33,594 INFO org.eclipse.jetty.server.session.HouseKeeper [main] node0 Scavenging every 660000ms
+2021-01-10 19:28:33,610 INFO org.eclipse.jetty.server.handler.ContextHandler [main] Started o.s.b.w.e.j.JettyEmbeddedWebAppContext@5f038248{application,/,[file:///C:/Users/sagayaraj/AppData/Local/Temp/jetty-docbase.8080.8718197443242909278/],AVAILABLE}
+2021-01-10 19:28:33,610 INFO org.eclipse.jetty.server.Server [main] Started @4482ms
+2021-01-10 19:28:33,857 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-10 19:28:34,196 INFO org.eclipse.jetty.server.handler.ContextHandler$Context [main] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-10 19:28:34,196 INFO org.springframework.web.servlet.FrameworkServlet [main] Initializing Servlet 'dispatcherServlet'
+2021-01-10 19:28:34,196 INFO org.springframework.web.servlet.FrameworkServlet [main] Completed initialization in 0 ms
+2021-01-10 19:28:34,243 INFO org.eclipse.jetty.server.AbstractConnector [main] Started ServerConnector@4efc25fc{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2021-01-10 19:28:34,243 INFO org.springframework.boot.web.embedded.jetty.JettyWebServer [main] Jetty started on port(s) 8080 (http/1.1) with context path '/'
+2021-01-10 19:28:34,258 INFO org.springframework.boot.StartupInfoLogger [main] Started BootstrapTodoApplication in 4.184 seconds (JVM running for 5.132)
+2021-01-10 19:28:48,652 INFO ae.goldenrealestate.endpoints.rest.impl.BuildingController [qtp627746290-23] Let us log something 33
+2021-01-10 20:08:29,228 INFO org.springframework.boot.StartupInfoLogger [main] Starting BootstrapTodoApplication using Java 11.0.8 on sagayaraj with PID 7252 (C:\SagayHome\PersonalDev\ClientProjects\GoldenRealEstate\GoldenRealEstate\todo-app-bootstrap\target\classes started by sagayaraj in C:\SagayHome\PersonalDev\ClientProjects\GoldenRealEstate)
+2021-01-10 20:08:29,255 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.4.1, Spring v5.3.2
+2021-01-10 20:08:29,255 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-01-10 20:08:30,787 INFO org.eclipse.jetty.util.log.Log [main] Logging initialized @3695ms to org.eclipse.jetty.util.log.Slf4jLog
+2021-01-10 20:08:31,433 INFO org.springframework.boot.web.embedded.jetty.JettyServletWebServerFactory [main] Server initialized with port: 8080
+2021-01-10 20:08:31,449 INFO org.eclipse.jetty.server.Server [main] jetty-9.4.35.v20201120; built: 2020-11-20T21:17:03.964Z; git: bdc54f03a5e0a7e280fab27f55c3c75ee8da89fb; jvm 11.0.8+10-LTS
+2021-01-10 20:08:31,503 INFO org.eclipse.jetty.server.handler.ContextHandler$Context [main] Initializing Spring embedded WebApplicationContext
+2021-01-10 20:08:31,503 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2127 ms
+2021-01-10 20:08:31,733 INFO org.eclipse.jetty.server.session.DefaultSessionIdManager [main] DefaultSessionIdManager workerName=node0
+2021-01-10 20:08:31,733 INFO org.eclipse.jetty.server.session.DefaultSessionIdManager [main] No SessionScavenger set, using defaults
+2021-01-10 20:08:31,749 INFO org.eclipse.jetty.server.session.HouseKeeper [main] node0 Scavenging every 600000ms
+2021-01-10 20:08:31,771 INFO org.eclipse.jetty.server.handler.ContextHandler [main] Started o.s.b.w.e.j.JettyEmbeddedWebAppContext@de8039f{application,/,[file:///C:/Users/sagayaraj/AppData/Local/Temp/jetty-docbase.8080.17877552874834308513/],AVAILABLE}
+2021-01-10 20:08:31,771 INFO org.eclipse.jetty.server.Server [main] Started @4677ms
+2021-01-10 20:08:32,103 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-10 20:08:32,508 INFO org.eclipse.jetty.server.handler.ContextHandler$Context [main] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-10 20:08:32,508 INFO org.springframework.web.servlet.FrameworkServlet [main] Initializing Servlet 'dispatcherServlet'
+2021-01-10 20:08:32,524 INFO org.springframework.web.servlet.FrameworkServlet [main] Completed initialization in 0 ms
+2021-01-10 20:08:32,566 INFO org.eclipse.jetty.server.AbstractConnector [main] Started ServerConnector@e48bf9a{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2021-01-10 20:08:32,566 INFO org.springframework.boot.web.embedded.jetty.JettyWebServer [main] Jetty started on port(s) 8080 (http/1.1) with context path '/'
+2021-01-10 20:08:32,577 INFO org.springframework.boot.StartupInfoLogger [main] Started BootstrapTodoApplication in 4.526 seconds (JVM running for 5.493)
+2021-01-10 20:08:41,793 INFO ae.goldenrealestate.endpoints.rest.impl.BuildingController [qtp523794808-23] Let us log something 33

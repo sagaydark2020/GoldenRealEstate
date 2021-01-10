@@ -1,0 +1,49 @@
+2021-01-10 19:28:07,409 INFO org.springframework.boot.StartupInfoLogger [main] Starting BootstrapTodoApplicationTests using Java 11.0.8 on sagayaraj with PID 1848 (started by sagayaraj in C:\SagayHome\PersonalDev\ClientProjects\GoldenRealEstate\GoldenRealEstate\todo-app-bootstrap)
+2021-01-10 19:28:07,412 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.4.1, Spring v5.3.2
+2021-01-10 19:28:07,415 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-01-10 19:28:08,945 INFO org.eclipse.jetty.util.log.Log [main] Logging initialized @4269ms to org.eclipse.jetty.util.log.Slf4jLog
+2021-01-10 19:28:09,550 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-10 19:28:10,166 INFO org.springframework.boot.StartupInfoLogger [main] Started BootstrapTodoApplicationTests in 3.497 seconds (JVM running for 5.493)
+2021-01-10 19:28:10,944 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-10 19:53:58,438 INFO org.springframework.boot.StartupInfoLogger [main] Starting BootstrapTodoApplicationTests using Java 11.0.8 on sagayaraj with PID 18624 (started by sagayaraj in C:\SagayHome\PersonalDev\ClientProjects\GoldenRealEstate\GoldenRealEstate\todo-app-bootstrap)
+2021-01-10 19:53:58,438 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.4.1, Spring v5.3.2
+2021-01-10 19:53:58,446 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-01-10 19:54:00,214 INFO org.eclipse.jetty.util.log.Log [main] Logging initialized @5069ms to org.eclipse.jetty.util.log.Slf4jLog
+2021-01-10 19:54:00,887 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-10 19:54:01,562 INFO org.springframework.boot.StartupInfoLogger [main] Started BootstrapTodoApplicationTests in 4.012 seconds (JVM running for 6.415)
+2021-01-10 19:54:02,431 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-10 19:55:02,535 INFO org.springframework.boot.StartupInfoLogger [main] Starting BootstrapTodoApplicationTests using Java 11.0.8 on sagayaraj with PID 19536 (started by sagayaraj in C:\SagayHome\PersonalDev\ClientProjects\GoldenRealEstate\GoldenRealEstate\todo-app-bootstrap)
+2021-01-10 19:55:02,535 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.4.1, Spring v5.3.2
+2021-01-10 19:55:02,543 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-01-10 19:55:04,257 INFO org.eclipse.jetty.util.log.Log [main] Logging initialized @4737ms to org.eclipse.jetty.util.log.Slf4jLog
+2021-01-10 19:55:04,842 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-10 19:55:05,491 INFO org.springframework.boot.StartupInfoLogger [main] Started BootstrapTodoApplicationTests in 3.771 seconds (JVM running for 5.972)
+2021-01-10 19:55:06,413 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-10 19:55:54,016 INFO org.springframework.boot.StartupInfoLogger [main] Starting BootstrapTodoApplicationTests using Java 11.0.8 on sagayaraj with PID 18676 (started by sagayaraj in C:\SagayHome\PersonalDev\ClientProjects\GoldenRealEstate\GoldenRealEstate\todo-app-bootstrap)
+2021-01-10 19:55:54,016 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.4.1, Spring v5.3.2
+2021-01-10 19:55:54,031 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-01-10 19:55:55,639 INFO org.eclipse.jetty.util.log.Log [main] Logging initialized @4584ms to org.eclipse.jetty.util.log.Slf4jLog
+2021-01-10 19:55:56,232 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-10 19:55:57,003 INFO org.springframework.boot.StartupInfoLogger [main] Started BootstrapTodoApplicationTests in 3.745 seconds (JVM running for 5.943)
+2021-01-10 19:55:57,895 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-10 19:57:05,279 INFO org.springframework.boot.StartupInfoLogger [main] Starting BootstrapTodoApplicationTests using Java 11.0.8 on sagayaraj with PID 17548 (started by sagayaraj in C:\SagayHome\PersonalDev\ClientProjects\GoldenRealEstate\GoldenRealEstate\todo-app-bootstrap)
+2021-01-10 19:57:05,283 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.4.1, Spring v5.3.2
+2021-01-10 19:57:05,283 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-01-10 19:57:06,864 INFO org.eclipse.jetty.util.log.Log [main] Logging initialized @4581ms to org.eclipse.jetty.util.log.Slf4jLog
+2021-01-10 19:57:07,434 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-10 19:57:08,058 INFO org.springframework.boot.StartupInfoLogger [main] Started BootstrapTodoApplicationTests in 3.652 seconds (JVM running for 5.774)
+2021-01-10 19:57:09,016 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-10 20:06:22,055 INFO org.springframework.boot.StartupInfoLogger [main] Starting BootstrapTodoApplicationTests using Java 11.0.8 on sagayaraj with PID 19064 (started by sagayaraj in C:\SagayHome\PersonalDev\ClientProjects\GoldenRealEstate\GoldenRealEstate\todo-app-bootstrap)
+2021-01-10 20:06:22,056 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.4.1, Spring v5.3.2
+2021-01-10 20:06:22,056 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-01-10 20:06:23,831 INFO org.eclipse.jetty.util.log.Log [main] Logging initialized @4955ms to org.eclipse.jetty.util.log.Slf4jLog
+2021-01-10 20:06:24,478 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-10 20:06:25,186 INFO org.springframework.boot.StartupInfoLogger [main] Started BootstrapTodoApplicationTests in 3.954 seconds (JVM running for 6.306)
+2021-01-10 20:06:26,069 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-10 20:08:03,859 INFO org.springframework.boot.StartupInfoLogger [main] Starting BootstrapTodoApplicationTests using Java 11.0.8 on sagayaraj with PID 19936 (started by sagayaraj in C:\SagayHome\PersonalDev\ClientProjects\GoldenRealEstate\GoldenRealEstate\todo-app-bootstrap)
+2021-01-10 20:08:03,859 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.4.1, Spring v5.3.2
+2021-01-10 20:08:03,867 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-01-10 20:08:06,466 INFO org.eclipse.jetty.util.log.Log [main] Logging initialized @5631ms to org.eclipse.jetty.util.log.Slf4jLog
+2021-01-10 20:08:10,164 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-10 20:08:11,041 INFO org.springframework.boot.StartupInfoLogger [main] Started BootstrapTodoApplicationTests in 8.044 seconds (JVM running for 10.221)
+2021-01-10 20:08:11,861 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
