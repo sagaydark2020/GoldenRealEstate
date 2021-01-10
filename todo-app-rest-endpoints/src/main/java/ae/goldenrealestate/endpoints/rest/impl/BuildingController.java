@@ -23,7 +23,7 @@ public class BuildingController extends AssetController {
     private BuildingService buildingService;
 
 
-    @GetMapping("/api/buildingssdd")
+    @GetMapping("/api/buildings")
     public ResponseEntity<List<BuildingEntity>> getAllBuildings() {
         LOGGER.info("something");
         return ResponseEntity.ok().body(buildingService.getBuildings());
