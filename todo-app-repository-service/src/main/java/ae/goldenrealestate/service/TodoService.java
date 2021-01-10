@@ -16,26 +16,29 @@ public class TodoService {
     private static final Logger LOGGER = LoggerFactory.getLogger(TodoService.class);
 
     @Autowired
-    TodoRepository todoRepository;
+    private TodoRepository todoRepository;
 
     //change to dto
-    public void addTodo(TodoEntity todoEntity) {
-        todoRepository.save(todoEntity);
+    public TodoEntity createTodo(TodoEntity todoEntity) {
+        return todoRepository.save(todoEntity);
+    }
+
+    public TodoEntity updateTodo(TodoEntity todoEntity) {
+        return todoRepository.save(todoEntity);
     }
 
     public Optional<TodoEntity> deleteTodoById(long id) {
-        Optional<TodoEntity> todoEntity = todoRepository.findById(id);
-        LOGGER.info("Todo findByid {} ", todoEntity);
+        Optional<TodoEntity> todoEntity = findTodoById(id);
+        LOGGER.info("Todo deleteTodoById {} ", todoEntity);
         todoRepository.deleteById(id);
         return todoEntity;
     }
 
-    public List<TodoEntity> getAllTodos() {
-        TodoEntity todoEntity = new TodoEntity();
-        todoEntity.setDescription("Nake sure you ckean the facade");
-        todoEntity.setName("Clean Facade");
-        addTodo(todoEntity);
-        LOGGER.info("Todo Added {} ", todoEntity);
+    public Optional<TodoEntity> findTodoById(long id) {
+        return todoRepository.findById(id);
+    }
+
+    public List<TodoEntity> getAllTodos() {;
         return todoRepository.findAll();
     }
 }
