@@ -7,6 +7,7 @@ class TodoApp extends Component {
     render() {
         return (<>
               <h1>ToDo Application</h1>
+              <div>  <i class="fa th-list"></i></div>
               <Router>
                     <Switch>
                         <Route path="/" exact component={ListTodoComponent} />
