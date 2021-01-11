@@ -13,8 +13,8 @@ Project status should be visible per building and per person it is assigned to
 
 Technologies
 
-Frontend : Reactjs, Bootstrap, JS/HTML
+Frontend : Reactjs, Bootstrap (for react), JS/HTML
 
-Backend  : Spring Rest, boot, jpa 
+Backend  : Spring Rest, Spring Boot, Hibernate, Spring JPA/Data, PostgreSQL
 
 Version 2.0
