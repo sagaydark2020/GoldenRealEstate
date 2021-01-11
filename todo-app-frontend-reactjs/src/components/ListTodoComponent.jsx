@@ -50,7 +50,7 @@ class ListTodoComponent extends Component {
     render() {
         return (
             <div className="container">
-                {this.state.message && <div class="alert alert-success">{this.state.message}</div>}
+                
                 <div className="container">
                     <table className="table">
                         <thead>
@@ -58,8 +58,8 @@ class ListTodoComponent extends Component {
                                 <th>Id</th>
                                 <th>Todo</th>
                                 <th>Details</th>
-                                <th>Delete</th>
-                                <th>Update</th>
+                                <th>&nbsp;</th>
+                                <th>&nbsp;</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -78,8 +78,9 @@ class ListTodoComponent extends Component {
                         </tbody>
                     </table>
                     <div className="row">
-                            <button className="btn btn-success" onClick={this.addTodoClicked}>Add</button>
+                        <button className="btn btn-success" onClick={this.addTodoClicked}>Add Todo</button>
                     </div>
+                    
                 </div>
             </div>
         )
