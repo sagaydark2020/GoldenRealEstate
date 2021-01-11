@@ -885,3 +885,5 @@
 2021-01-11 06:47:03,759 INFO ae.goldenrealestate.endpoints.rest.impl.TodoController [qtp1380583278-129]  Fetched entities [TodoEntity{id=14, name='cat', description='test3'}] 
 2021-01-11 06:47:28,368 INFO ae.goldenrealestate.endpoints.rest.impl.TodoController [qtp1380583278-20]  Fetched entities [TodoEntity{id=14, name='cat', description='test3'}] 
 2021-01-11 06:47:30,523 INFO ae.goldenrealestate.endpoints.rest.impl.TodoController [qtp1380583278-24]  Fetched entities [TodoEntity{id=14, name='cat', description='test3'}] 
+2021-01-11 06:47:48,339 INFO ae.goldenrealestate.endpoints.rest.impl.TodoController [qtp1380583278-69]  Fetched entities [TodoEntity{id=14, name='cat', description='test3'}] 
+2021-01-11 06:51:05,900 INFO ae.goldenrealestate.endpoints.rest.impl.TodoController [qtp1380583278-18]  Fetched entities [TodoEntity{id=14, name='cat', description='test3'}] 
