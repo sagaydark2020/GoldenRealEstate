@@ -69,7 +69,7 @@ class TodoComponent extends Component {
 
         return (
             <div>
-                <h3> TODO </h3>
+                <h3>  Todo </h3>
                 <div className="container">
                     <Formik
                         initialValues={{ id, description }}

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import TodoListServices from '../service/TodoListServices';
+import { Row , Col, NavDropdown} from 'react-bootstrap'
 class ListTodoComponent extends Component {
 
     constructor(props) {
@@ -49,9 +50,9 @@ class ListTodoComponent extends Component {
 
     render() {
         return (
+           
             <div className="container">
-                
-                <div className="container">
+                    <div className="container ">
                     <table className="table">
                         <thead>
                             <tr>
@@ -82,6 +83,7 @@ class ListTodoComponent extends Component {
                     </div>
                     
                 </div>
+              
             </div>
         )
     }
