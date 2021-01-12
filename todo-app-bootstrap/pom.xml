@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>ae.goldenrealestate.todo</groupId>
 	<artifactId>todo-app-bootstrap</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0-SNAPSHOT</version>
 	<name>todo-app-bootstrap</name>
 	<description>Golden Real Estate Todo Application</description>
 

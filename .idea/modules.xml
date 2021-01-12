@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/GoldenRealEstate.iml" filepath="$PROJECT_DIR$/GoldenRealEstate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/todo-app-domain-models/todo-app-domain-models.iml" filepath="$PROJECT_DIR$/todo-app-domain-models/todo-app-domain-models.iml" />
+      <module fileurl="file://$PROJECT_DIR$/todo-app-repository-service/todo-app-repository-service.iml" filepath="$PROJECT_DIR$/todo-app-repository-service/todo-app-repository-service.iml" />
     </modules>
   </component>
 </project>

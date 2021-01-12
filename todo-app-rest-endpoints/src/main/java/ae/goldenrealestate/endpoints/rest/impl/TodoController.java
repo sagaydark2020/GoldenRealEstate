@@ -17,6 +17,7 @@ import java.util.Optional;
 @CrossOrigin(origins = {"http://localhost:3000", "http://localhost:4200"})
 @RestController
 public class TodoController extends AssetResource {
+
     private static final Logger LOGGER = LoggerFactory.getLogger(BuildingController.class.getName());
 
     @Autowired
@@ -46,20 +47,15 @@ public class TodoController extends AssetResource {
     @PutMapping("/api/todo/{id}")
     public ResponseEntity<TodoEntity> updateTodo(@PathVariable long id,
                                                  @RequestBody TodoEntity todoEntity) {
-
         TodoEntity updatedEntity = todoService.updateTodo(todoEntity);
-
         return new ResponseEntity<TodoEntity>(todoEntity, HttpStatus.OK);
     }
 
     @PostMapping("/api/todo")
     public ResponseEntity<Void> createTodo(@PathVariable String username, @RequestBody TodoEntity todoEntity) {
-
         TodoEntity createdEntity = todoService.createTodo(todoEntity);
-
         URI uri = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}").buildAndExpand(createdEntity.getId())
                 .toUri();
-
         return ResponseEntity.created(uri).build();
     }
 }

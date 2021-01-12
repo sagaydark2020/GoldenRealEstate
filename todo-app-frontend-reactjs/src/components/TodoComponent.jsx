@@ -28,6 +28,7 @@ class TodoComponent extends Component {
 
         TodoListServices.retrieveTodo(this.state.id)
             .then(response => this.setState({
+                name: response.data.name,
                 description: response.data.description
             }))
     }
@@ -65,14 +66,15 @@ class TodoComponent extends Component {
 
     render() {
 
-        let { description, id } = this.state
-
+        let { description, name, id } = this.state
+        console.log(this.state)
+       
         return (
             <div>
                 <h3>  Todo </h3>
                 <div className="container">
                     <Formik
-                        initialValues={{ id, description }}
+                        initialValues={{ id, name, description }}
                         onSubmit={this.onSubmit}
                         validateOnChange={false}
                         validateOnBlur={false}
@@ -80,10 +82,10 @@ class TodoComponent extends Component {
                         enableReinitialize={true}
                     >
                         {
+                           
                             (props) => (
                                 <Form>
-                                    <ErrorMessage name="description" component="div"
-                                        className="alert alert-warning" />
+                                    <ErrorMessage name="description" component="div" className="alert alert-warning" />
                                     <fieldset className="form-group">
                                         <Field className="form-control" type="text" name="id" hidden />
                                     </fieldset>

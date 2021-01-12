@@ -1,4 +1,4 @@
 package ae.goldenrealestate.endpoints.rest.api;
 
-public class RestConfigController {
+public interface RestConfigController {
 }

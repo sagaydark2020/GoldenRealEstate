@@ -1,7 +1,4 @@
 import React, { Component } from 'react';
-import ListTodoComponent from './ListTodoComponent';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import TodoComponent from './TodoComponent';
 import TodoNavBar from './TodoNavBar';
 import { Card, Row, Col } from 'react-bootstrap';
 class TodoApp extends Component {
@@ -10,7 +7,7 @@ class TodoApp extends Component {
              <div className="bodyContainer">
                  <Row> 
                      <Col>
-                      <Card>
+                      <Card className="headerLayout">
                             <Card.Body>
                             </Card.Body>
                         </Card> 
@@ -22,15 +19,47 @@ class TodoApp extends Component {
                          </Col>
                  </Row>
                  <Row>
-                     <Col> <div className="container fluid"> </div></Col>
+                     <Col> <div className="container  "> 
+                     &nbsp;
+                     <div class="row">
+    <div class="col-sm-6">
+        <div class="card text-white bg-primary mb-4">
+            <div class="card-body">
+                <h5 class="card-title"> Open Todo </h5>
+                <p class="card-text">  5 </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="card text-white bg-secondary mb-4">
+            <div class="card-body">
+                <h5 class="card-title"> Closed </h5>
+                <p class="card-text"> 150 </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="card text-white bg-success mb-4">
+            <div class="card-body">
+                <h5 class="card-title"> UnAssigned Todo </h5>
+                <p class="card-text"> 30 </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="card text-white bg-danger mb-4">
+            <div class="card-body">
+                <h5 class="card-title"> UnAssigned People </h5>
+                <p class="card-text"> 3 </p>
+            </div>
+        </div>
+    </div>
+   
+</div>
+    </div>
+    </Col>
                      <Col> <div className="containerTrans">
-                     <Router>
-                    <Switch>
-                        <Route path="/" exact component={ListTodoComponent} />
-                        <Route path="/todo" exact component={ListTodoComponent} />
-                        <Route path="/todo/:id" component={TodoComponent} />
-                    </Switch>
-                </Router>
+                   
                 </div></Col>
                  </Row>
                  
