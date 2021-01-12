@@ -13,25 +13,25 @@ class TodoNavBar extends Component {
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="mr-auto">
                 <NavDropdown title="Properties" id="collasible-nav-dropdown">
-                    <NavDropdown.Item href="#action/3.1">Add Property </NavDropdown.Item>
+                    <Link to="/buildings/-1">
+                        <NavDropdown.Item href="/buildings/-1">Add Property </NavDropdown.Item>
+                    </Link>
                     <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action/3.2">View Property</NavDropdown.Item>
+                    <Link to="/buildings/">
+                        <NavDropdown.Item href="/buildings/">View Property</NavDropdown.Item>
+                    </Link>
                 </NavDropdown>
                 <NavDropdown title=" User Management" id="collasible-nav-dropdown">
-                    <Link to="/todo/-1">
-                     <NavDropdown.Item href="/todo/-1">Add User </NavDropdown.Item>
+                    <Link to="/user/-1">
+                        <NavDropdown.Item href="/user/-1">Add User </NavDropdown.Item>
                     </Link>
-                    <Link to="/todo/">
-                     <NavDropdown.Item href="#action/3.2">View Users</NavDropdown.Item>
+                    <Link to="/user/">
+                        <NavDropdown.Item href="/user/">View Users</NavDropdown.Item>
                     </Link>
                 </NavDropdown>
-                <NavDropdown title="Todo" id="collasible-nav-dropdown">
+                <NavDropdown title="Project" id="collasible-nav-dropdown">
                     <NavDropdown.Item href="/todo/:id">Add Todo </NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.2">Assign Todo</NavDropdown.Item>
-                    <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action/3.2">View Todo</NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.2">Todo By Person</NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.2">Todo By Buildings</NavDropdown.Item>
+                    <NavDropdown.Item href="/todo/">View Todo</NavDropdown.Item>
                 </NavDropdown>
                 </Nav>
                 

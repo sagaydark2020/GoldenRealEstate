@@ -18,7 +18,7 @@ import java.util.Optional;
 @RestController
 public class TodoController extends AssetResource {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(BuildingController.class.getName());
+    private static final Logger LOGGER = LoggerFactory.getLogger(TodoController.class.getName());
 
     @Autowired
     private TodoService todoService;
@@ -48,7 +48,7 @@ public class TodoController extends AssetResource {
     public ResponseEntity<TodoEntity> updateTodo(@PathVariable long id,
                                                  @RequestBody TodoEntity todoEntity) {
         TodoEntity updatedEntity = todoService.updateTodo(todoEntity);
-        return new ResponseEntity<TodoEntity>(todoEntity, HttpStatus.OK);
+        return new ResponseEntity<>(updatedEntity, HttpStatus.OK);
     }
 
     @PostMapping("/api/todo")

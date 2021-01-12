@@ -1,15 +1,16 @@
 import React, { Component } from 'react'
 import { Formik, Form, Field, ErrorMessage } from 'formik';
-import TodoListServices from '../service/TodoListServices';
+import UserListServices from '../../service/UserListServices';
 
-class TodoComponent extends Component {
+class UserComponent extends Component {
 
     
     constructor(props) {
         super(props)
         this.state = {
             id: this.props.match.params.id,
-            description: ''
+            userName: '' ,
+            userEmail: ''
         }
         
         this.onSubmit = this.onSubmit.bind(this)
@@ -26,20 +27,20 @@ class TodoComponent extends Component {
             return
         }
 
-        TodoListServices.retrieveTodo(this.state.id)
+        UserListServices.retrieveUser(this.state.id)
             .then(response => this.setState({
-                name: response.data.name,
-                description: response.data.description
+                userName: response.data.userName,
+                userEmail: response.data.userEmail
             }))
     }
 
     validate(values) {
         let errors = {}
-        if (!values.description) {
-            errors.description = 'Enter a Description'
-        } else if (values.description.length < 5) {
-            errors.description = 'Enter atleast 5 Characters in Description'
-        }
+        if (!values.userName) {
+            errors.userName = 'Enter a user name'
+        } else if (!values.userEmail.length ) {
+            errors.description = 'Enter a valid email of the user'
+        } 
 
         return errors
 
@@ -47,18 +48,18 @@ class TodoComponent extends Component {
 
     onSubmit(values) {
 
-        let todo = {
+        let users = {
             id: this.state.id,
-            name: values.name,
-            description: values.description
+            userName: values.userName,
+            userEmail: values.userEmail
         }
 
         if (this.state.id === -1) {
-            TodoListServices.createTodo(todo)
-                .then(() => this.props.history.push('/todo'))
+            UserListServices.createUser(users)
+                .then(() => this.props.history.push('/user/-1'))
         } else {
-            TodoListServices.updateTodo(this.state.id, todo)
-                .then(() => this.props.history.push('/todo'))
+            UserListServices.updateUser(this.state.id, users)
+                .then(() => this.props.history.push('/user'))
         }
 
         console.log(values);
@@ -66,15 +67,15 @@ class TodoComponent extends Component {
 
     render() {
 
-        let { description, name, id } = this.state
+        let { userName, userEmail, id } = this.state
         console.log(this.state)
        
         return (
             <div>
-                <h3>  Todo </h3>
+                <h3> Add New User </h3>
                 <div className="container">
                     <Formik
-                        initialValues={{ id, name, description }}
+                        initialValues={{ id, userName, userEmail }}
                         onSubmit={this.onSubmit}
                         validateOnChange={false}
                         validateOnBlur={false}
@@ -90,12 +91,12 @@ class TodoComponent extends Component {
                                         <Field className="form-control" type="text" name="id" hidden />
                                     </fieldset>
                                     <fieldset className="form-group">
-                                        <label>Todo</label>
-                                        <Field className="form-control" type="text" name="name" />
+                                        <label>Username</label>
+                                        <Field className="form-control" type="text" name="userName" />
                                     </fieldset>
                                     <fieldset className="form-group">
-                                        <label>Description</label>
-                                        <Field className="form-control" type="text" name="description" />
+                                        <label>UserEmail</label>
+                                        <Field className="form-control" type="text" name="userEmail" />
                                     </fieldset>
                                     <button className="btn btn-success" type="submit">Save</button>
                                 </Form>
@@ -109,4 +110,4 @@ class TodoComponent extends Component {
     }       
 }
 
-export default TodoComponent
+export default UserComponent

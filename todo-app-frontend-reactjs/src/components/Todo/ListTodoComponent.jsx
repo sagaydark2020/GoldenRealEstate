@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import TodoListServices from '../service/TodoListServices';
+import TodoListServices from '../../service/TodoListServices';
 import { Row , Col, NavDropdown} from 'react-bootstrap'
 class ListTodoComponent extends Component {
 
@@ -49,8 +49,9 @@ class ListTodoComponent extends Component {
 
     render() {
         return (
-           
+            
             <div className="container">
+                  <h2> View Projects </h2>
                     <div className="container ">
                     <table className="table">
                         <thead>
