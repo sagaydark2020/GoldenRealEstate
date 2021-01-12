@@ -40,7 +40,6 @@ class ListTodoComponent extends Component {
     }
 
     updateTodoClicked(id) {
-        console.log('add clicked ' )
         this.props.history.push(`/todo/${id}`)
     }
 
