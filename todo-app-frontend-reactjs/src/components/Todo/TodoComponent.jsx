@@ -55,7 +55,7 @@ class TodoComponent extends Component {
 
         if (this.state.id === -1) {
             TodoListServices.createTodo(todo)
-                .then(() => this.props.history.push('/todo'))
+                .then(() => this.props.history.push('/todo/-1'))
         } else {
             TodoListServices.updateTodo(this.state.id, todo)
                 .then(() => this.props.history.push('/todo'))
