@@ -13,6 +13,15 @@ public class ProjectCompositeDto implements Serializable {
     private Long id;
     private String name;
     private String description;
+    private String projectProgress;
+
+    public String getProjectProgress() {
+        return projectProgress;
+    }
+
+    public void setProjectProgress(String projectProgress) {
+        this.projectProgress = projectProgress;
+    }
 
     public Long getBuildingId() {
         return buildingId;

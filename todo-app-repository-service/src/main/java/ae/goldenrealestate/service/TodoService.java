@@ -2,6 +2,7 @@ package ae.goldenrealestate.service;
 
 import ae.goldenrealestate.data.dto.ProjectCompositeDto;
 import ae.goldenrealestate.data.model.BuildingEntity;
+import ae.goldenrealestate.data.model.ProjectProgress;
 import ae.goldenrealestate.data.model.TodoEntity;
 import ae.goldenrealestate.data.model.UserEntity;
 import ae.goldenrealestate.repository.BuildingRepository;
@@ -37,6 +38,7 @@ public class TodoService {
         Optional<UserEntity> userEntity =  userRepository.findById(projectCompositeDto.unwrapUserEntity().getId());
         LOGGER.info("User  : {} " , userEntity);
         TodoEntity todoEntity = projectCompositeDto.unwrapTodoEntity();
+        todoEntity.setProjectProgress(ProjectProgress.fromString(projectCompositeDto.getProjectProgress()));
         buildingEntity.ifPresent(todoEntity::setBuilding);
         userEntity.ifPresent(todoEntity::setUser);
         return todoRepository.save(todoEntity);

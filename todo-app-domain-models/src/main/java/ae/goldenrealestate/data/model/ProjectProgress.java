@@ -1,7 +1,7 @@
 package ae.goldenrealestate.data.model;
 
 public enum ProjectProgress {
-    NEW("New"), IN_PROGRESS("In Progress"), COMPLETED("Completed");
+    NEW("NEW"), IN_PROGRESS("INPROGRESS"), COMPLETED("COMPLETED");
 
     private String enumAsString;
 

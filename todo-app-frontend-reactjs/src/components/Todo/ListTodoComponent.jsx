@@ -64,6 +64,7 @@ class ListTodoComponent extends Component {
                                 <th>Project Description</th>
                                 <th>Building</th>
                                 <th>Assigned</th>
+                                <th>Status</th>
                                 <th>&nbsp;</th>
                                 <th>&nbsp;</th>
                             </tr>
@@ -78,6 +79,7 @@ class ListTodoComponent extends Component {
                                             <td>{todo.description}</td>
                                             <td>{todo.building.buildingName}</td>
                                             <td>{todo.user.userName}</td>
+                                            <td>{todo.projectProgress}</td>
                                             <td><button className="btn btn-warning btn-xs" onClick={() => this.deleteTodoClicked(todo.id , todo.name)}>Delete</button></td>
                                             <td><button className="btn btn-success btn-xs" onClick={() => this.updateTodoClicked(todo.id)}>Update</button></td>
                                         </tr>

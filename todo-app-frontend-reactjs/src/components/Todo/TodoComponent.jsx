@@ -15,7 +15,8 @@ class TodoComponent extends Component {
             buildings: [] , 
             users: [],
             buildings1: [] , 
-            users1: []
+            users1: [],
+            projectProgress :'NEW' 
         }
         this.onSubmit = this.onSubmit.bind(this)
         this.validate = this.validate.bind(this)
@@ -56,7 +57,8 @@ class TodoComponent extends Component {
                 name: response.data.name,
                 description: response.data.description,
                 buildings1: [response.data.building],
-                users1: [response.data.user]
+                users1: [response.data.user] ,
+                projectProgress : response.data.projectProgress
             }));
     }
 
@@ -79,7 +81,8 @@ class TodoComponent extends Component {
             name: values.name,
             description: values.description,
             buildingId : values.buildingName,
-            userId : values.userName
+            userId : values.userName,
+            projectProgress : values.projectProgress
         }
 
         if (this.state.id === -1) {
@@ -94,21 +97,20 @@ class TodoComponent extends Component {
     }
 
     render() {
-
-        let { description, name, id, buildingName, buildingId, userId} = this.state
+        console.log(this.state)
+        let { description, name, id, buildingName, buildingId, userId,projectProgress} = this.state
        // let { description, name, id, buildingName} = this.state
         let stateCondition = this.state.id == -1 ? "Add Project" : "Edit Project"
+        this.state.buildings.map((building) => buildingId=building.id)
+        this.state.users.map((user) =>userId=user.id)
         this.state.buildings1.map((building) => buildingId=building.id)
         this.state.users1.map((user) =>userId=user.id)
-        console.log(userId)
-        console.log(buildingId)
-        console.log(this.state)
         return (
             <div className="container">
                  <h4> {stateCondition}</h4>
                 <div className="containerForm">
                     <Formik
-                        initialValues={{ id, name, description,buildingName, buildingName:buildingId, userName:userId }}
+                        initialValues={{ id, name, description,buildingName, buildingName:buildingId, userName:userId, projectProgress:projectProgress   }}
                         //initialValues={{ id, name, description,buildingName}}
                         onSubmit={this.onSubmit}
                         validateOnChange={false}
@@ -157,6 +159,7 @@ class TodoComponent extends Component {
                                                 id="buildingName"
                                                 name="buildingName"
                                                 multiple={false}
+                                                selectedOption={buildingId}
                                             >
                                             {this.state.buildings.map((building) => <option key={building.id}  value={building.id} >{building.buildingName}</option>)}
                                              </Field>
@@ -173,8 +176,29 @@ class TodoComponent extends Component {
                                                 id="userName"
                                                 name="userName"
                                                 multiple={false}
+                                                selectedOption={userId}
                                             >
                                             {this.state.users.map((user) => <option key={user.id} value={user.id} >{user.userName}</option>)}
+                                            
+                                             </Field>
+                                        </Col>
+                                        </Row>
+                                    </fieldset>
+                                    <fieldset className="form-group">
+                                        <Row>
+                                        <Col>
+                                        <label htmlFor="status">Status</label>
+                                        </Col> <Col>
+                                          <Field className="form-control"
+                                                component="select"
+                                                id="projectProgress"
+                                                name="projectProgress"
+                                                multiple={false}
+                                                selectedOption="INPROGRESS"
+                                            >
+                                             <option  key="NEW"  value="NEW" >New</option>
+                                             <option  key="INPROGRESS" value="INPROGRESS" >In Progress</option>
+                                             <option key="COMPLETED" value="COMPLETED" >Completed</option>
                                             
                                              </Field>
                                         </Col>

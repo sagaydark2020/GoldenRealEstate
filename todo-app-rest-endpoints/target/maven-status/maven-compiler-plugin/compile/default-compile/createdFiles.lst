@@ -2,3 +2,4 @@ ae\goldenrealestate\endpoints\rest\impl\TodoController.class
 ae\goldenrealestate\endpoints\rest\impl\BuildingController.class
 ae\goldenrealestate\endpoints\rest\api\RestConfigController.class
 ae\goldenrealestate\endpoints\rest\impl\AssetResource.class
+ae\goldenrealestate\endpoints\rest\impl\UserController.class

@@ -1,2 +1,5 @@
 ae\goldenrealestate\data\model\BuildingEntity.class
+ae\goldenrealestate\data\dto\ProjectCompositeDto.class
+ae\goldenrealestate\data\model\ProjectProgress.class
+ae\goldenrealestate\data\model\UserEntity.class
 ae\goldenrealestate\data\model\TodoEntity.class

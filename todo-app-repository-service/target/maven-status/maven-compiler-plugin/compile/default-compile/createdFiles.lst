@@ -1,6 +1,8 @@
-ae\goldenrealestate\service\TodoService.class
 ae\goldenrealestate\IServiceConfig.class
+ae\goldenrealestate\service\UserService.class
+ae\goldenrealestate\repository\TodoRepository.class
+ae\goldenrealestate\repository\UserRepository.class
+ae\goldenrealestate\service\TodoService.class
 ae\goldenrealestate\config\ServiceConfig.class
 ae\goldenrealestate\service\BuildingService.class
-ae\goldenrealestate\repository\TodoRepository.class
 ae\goldenrealestate\repository\BuildingRepository.class

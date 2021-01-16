@@ -27,6 +27,18 @@ public class TodoEntity implements Serializable {
     @JoinColumn(name = "usertable_id")
     private UserEntity user;
 
+    @Enumerated(EnumType.STRING)
+    @Column(name = "project_progress", nullable = false)
+    private ProjectProgress projectProgress;
+
+    public ProjectProgress getProjectProgress() {
+        return projectProgress;
+    }
+
+    public void setProjectProgress(ProjectProgress projectProgress) {
+        this.projectProgress = projectProgress;
+    }
+
     public BuildingEntity getBuilding() {
         return building;
     }
