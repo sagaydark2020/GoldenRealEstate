@@ -25,37 +25,62 @@ public class UserController extends AssetResource {
 
     @GetMapping("/api/user")
     public ResponseEntity<List<UserEntity>> getAllUsers() {
-        List<UserEntity> fetchedEntities = userService.getAllUsers();
-        LOGGER.info(" Fetched entities {} ", fetchedEntities);
-        return ResponseEntity.ok().body(fetchedEntities);
+        try {
+            List<UserEntity> fetchedEntities = userService.getAllUsers();
+            LOGGER.info(" Fetched entities {} ", fetchedEntities);
+            return ResponseEntity.ok().body(fetchedEntities);
+        } catch (Exception e) {
+            LOGGER.error("Exception while retrieving User . Stacktrace: \n{}", e.getStackTrace());
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
+        }
     }
 
     @GetMapping("/api/user/{id}")
     public ResponseEntity<Optional<UserEntity>> getUserById(@PathVariable long id) {
-        Optional<UserEntity> fetchedEntities = userService.findUserById(id);
-        LOGGER.info(" Fetched entities by id {} ", fetchedEntities);
-        return ResponseEntity.ok().body(fetchedEntities);
+        try {
+            Optional<UserEntity> fetchedEntities = userService.findUserById(id);
+            LOGGER.info(" Fetched entities by id {} ", fetchedEntities);
+            return ResponseEntity.ok().body(fetchedEntities);
+        } catch (Exception e) {
+            LOGGER.error("Exception while retrieving User . Stacktrace: \n{}", e.getStackTrace());
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
+        }
     }
 
     @DeleteMapping("/api/user/{id}")
     public ResponseEntity<Optional<UserEntity>> deleteUserById(@PathVariable long id) {
-        Optional<UserEntity> fetchedEntities = userService.deleteUser(id);
-        LOGGER.info(" Deleted entities {} ", fetchedEntities);
-        return ResponseEntity.ok().body(fetchedEntities);
+        try {
+            Optional<UserEntity> fetchedEntities = userService.deleteUser(id);
+            LOGGER.info(" Deleted entities {} ", fetchedEntities);
+            return ResponseEntity.ok().body(fetchedEntities);
+        } catch (Exception e) {
+            LOGGER.error("Exception while Deleting User . Stacktrace: \n{}", e.getStackTrace());
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
+        }
     }
 
     @PutMapping("/api/user/{id}")
     public ResponseEntity<UserEntity> updateUser(@PathVariable long id,
                                                  @RequestBody UserEntity userEntity) {
-        UserEntity updatedEntity = userService.updateUser(userEntity);
-        return new ResponseEntity<UserEntity>(updatedEntity, HttpStatus.OK);
+        try {
+            UserEntity updatedEntity = userService.updateUser(userEntity);
+            return new ResponseEntity<UserEntity>(updatedEntity, HttpStatus.OK);
+        } catch (Exception e) {
+            LOGGER.error("Exception while Updating User . Stacktrace: \n{}", e.getStackTrace());
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
+        }
     }
 
     @PostMapping("/api/user")
     public ResponseEntity<Void> createUser(@PathVariable String username, @RequestBody UserEntity userEntity) {
-        UserEntity createdEntity = userService.createUser(userEntity);
-        URI uri = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}").buildAndExpand(createdEntity.getId())
-                .toUri();
-        return ResponseEntity.created(uri).build();
+        try {
+            UserEntity createdEntity = userService.createUser(userEntity);
+            URI uri = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}").buildAndExpand(createdEntity.getId())
+                    .toUri();
+            return ResponseEntity.created(uri).build();
+        } catch (Exception e) {
+            LOGGER.error("Exception while creating User . Stacktrace: \n{}", e.getStackTrace());
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
+        }
     }
 }
