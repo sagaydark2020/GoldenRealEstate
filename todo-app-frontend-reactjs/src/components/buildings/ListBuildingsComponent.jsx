@@ -51,14 +51,17 @@ class ListBuildingsComponent extends Component {
         return (
          
             <div className="container">
-                   <h2> View Buildings </h2>
-                    <div className="container ">
+                   <h4> Properties </h4>
+                      <div>
+                        <button className="btn btn-primary" onClick={this.addBuildingsClickeds}>Add Property</button>&nbsp;
+                    </div>
+                    <div className="table-container">
                     <table className="table">
-                        <thead>
+                    <thead>
                             <tr>
                                 <th>Id</th>
-                                <th>Building Name</th>
-                                <th>Building Location</th>
+                                <th>Property Name</th>
+                                <th>Property Location</th>
                                 <th>&nbsp;</th>
                                 <th>&nbsp;</th>
                             </tr>
@@ -78,9 +81,6 @@ class ListBuildingsComponent extends Component {
                             }
                         </tbody>
                     </table>
-                    <div className="row">
-                        <button className="btn btn-success" onClick={this.addBuildingsClickeds}>Add Buildings</button>
-                    </div>
                     
                 </div>
               

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import UserListServices from '../../service/UserListServices';
-import { Row , Col, NavDropdown} from 'react-bootstrap'
 class ListUserComponent extends Component {
 
     constructor(props) {
@@ -49,10 +48,13 @@ class ListUserComponent extends Component {
 
     render() {
         return (
-         
+            
             <div className="container">
-                   <h2> View Users </h2>
-                    <div className="container ">
+                   <h4> Users </h4>
+                   <div>
+                        <button className="btn btn-primary btn-xs" onClick={this.addUserClicked}>Add User</button>&nbsp;
+                    </div>
+                    <div className="table-container">
                     <table className="table">
                         <thead>
                             <tr>
@@ -78,10 +80,6 @@ class ListUserComponent extends Component {
                             }
                         </tbody>
                     </table>
-                    <div className="row">
-                        <button className="btn btn-success" onClick={this.addUserClicked}>Add User</button>
-                    </div>
-                    
                 </div>
               
             </div>

@@ -1,5 +1,7 @@
 package ae.goldenrealestate.endpoints.rest.impl;
 
+import ae.goldenrealestate.data.dto.ProjectCompositeDto;
+import ae.goldenrealestate.data.model.BuildingEntity;
 import ae.goldenrealestate.data.model.TodoEntity;
 import ae.goldenrealestate.service.TodoService;
 import org.slf4j.Logger;
@@ -31,29 +33,32 @@ public class TodoController extends AssetResource {
     }
 
     @GetMapping("/api/todo/{id}")
-    public ResponseEntity<Optional<TodoEntity>> getTodoById(@PathVariable long id) {
-        Optional<TodoEntity> fetchedEntities = todoService.findTodoById(id);
+    public ResponseEntity<TodoEntity> getTodoById(@PathVariable long id) {
+        TodoEntity fetchedEntities = todoService.findTodoById(id);
         LOGGER.info(" Fetched entities by id {} ", fetchedEntities);
         return ResponseEntity.ok().body(fetchedEntities);
     }
 
     @DeleteMapping("/api/todo/{id}")
-    public ResponseEntity<Optional<TodoEntity>> deleteTodoById(@PathVariable long id) {
-        Optional<TodoEntity> fetchedEntities = todoService.deleteTodoById(id);
+    public ResponseEntity<TodoEntity> deleteTodoById(@PathVariable long id) {
+        TodoEntity fetchedEntities = todoService.deleteTodoById(id);
         LOGGER.info(" Deleted entities {} ", fetchedEntities);
         return ResponseEntity.ok().body(fetchedEntities);
     }
 
     @PutMapping("/api/todo/{id}")
     public ResponseEntity<TodoEntity> updateTodo(@PathVariable long id,
-                                                 @RequestBody TodoEntity todoEntity) {
-        TodoEntity updatedEntity = todoService.updateTodo(todoEntity);
-        return new ResponseEntity<>(updatedEntity, HttpStatus.OK);
+                                                 @RequestBody ProjectCompositeDto projectCompositeDto) {
+        TodoEntity createdEntity = todoService.saveUpdate(projectCompositeDto);
+        URI uri = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}").buildAndExpand(createdEntity.getId())
+                .toUri();
+        return ResponseEntity.created(uri).build();
     }
 
     @PostMapping("/api/todo")
-    public ResponseEntity<Void> createTodo(@PathVariable String username, @RequestBody TodoEntity todoEntity) {
-        TodoEntity createdEntity = todoService.createTodo(todoEntity);
+    public ResponseEntity<Void> createTodo(@PathVariable Long buildingId, @RequestBody ProjectCompositeDto projectCompositeDto) {
+        LOGGER.info(" Path Variable " + buildingId);
+        TodoEntity createdEntity = todoService.saveUpdate(projectCompositeDto);
         URI uri = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}").buildAndExpand(createdEntity.getId())
                 .toUri();
         return ResponseEntity.created(uri).build();

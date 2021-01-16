@@ -3,6 +3,7 @@ package ae.goldenrealestate.data.model;
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Objects;
+import java.util.Optional;
 
 @Entity
 @Table(name = "todo")
@@ -12,19 +13,35 @@ public class TodoEntity implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
-    }
-
     @Column(name = "name")
     private String name;
 
     @Column(name = "description")
     private String description;
+
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "building_id")
+    private BuildingEntity building;
+
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "usertable_id")
+    private UserEntity user;
+
+    public BuildingEntity getBuilding() {
+        return building;
+    }
+
+    public void setBuilding(BuildingEntity building) {
+        this.building = building;
+    }
+
+    public UserEntity getUser() {
+        return user;
+    }
+
+    public void setUser(UserEntity user) {
+        this.user = user;
+    }
 
     public String getName() {
         return name;
@@ -42,6 +59,13 @@ public class TodoEntity implements Serializable {
         this.description = description;
     }
 
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -62,6 +86,7 @@ public class TodoEntity implements Serializable {
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", description='" + description + '\'' +
+                ", building=" + building +
                 '}';
     }
 }

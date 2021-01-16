@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import UserListServices from '../../service/UserListServices';
-
+import { Row , Col} from 'react-bootstrap'
 class UserComponent extends Component {
 
     
@@ -37,14 +37,20 @@ class UserComponent extends Component {
     validate(values) {
         let errors = {}
         if (!values.userName) {
-            errors.userName = 'Enter a user name'
-        } else if (!values.userEmail.length ) {
-            errors.description = 'Enter a valid email of the user'
+            errors.userName = 'Enter User Name'
+        } else if (!values.userEmail ) {
+            errors.description = 'Enter valid email for the User'
         } 
 
         return errors
 
     }
+
+     handleReset = (resetForm) => {
+        if (window.confirm('Reset?')) {
+          resetForm();
+        }
+      };
 
     onSubmit(values) {
 
@@ -68,12 +74,11 @@ class UserComponent extends Component {
     render() {
 
         let { userName, userEmail, id } = this.state
-        console.log(this.state)
-       
+        let stateCondition = this.state.id == -1 ? "Add User" : "Edit User"
         return (
-            <div>
-                <h3> Add New User </h3>
-                <div className="container">
+            <div className="container">
+                <h4> {stateCondition} </h4> 
+                <div className="containerForm">
                     <Formik
                         initialValues={{ id, userName, userEmail }}
                         onSubmit={this.onSubmit}
@@ -91,20 +96,38 @@ class UserComponent extends Component {
                                         <Field className="form-control" type="text" name="id" hidden />
                                     </fieldset>
                                     <fieldset className="form-group">
+                                    <Row>
+                                        <Col>
                                         <label>Username</label>
+                                        </Col><Col>
                                         <Field className="form-control" type="text" name="userName" />
+                                        </Col>
+                                        </Row>
                                     </fieldset>
                                     <fieldset className="form-group">
+                                    <Row>
+                                        <Col>
                                         <label>UserEmail</label>
+                                        </Col><Col>
                                         <Field className="form-control" type="text" name="userEmail" />
+                                        </Col></Row>
                                     </fieldset>
                                     <button className="btn btn-success" type="submit">Save</button>
+                                    &nbsp;  
+                                     <button  className="btn btn-warning"  type="reset"
+                                    onClick={this.handleReset.bind(null, props.resetForm)}
+                                    type="button"
+                                  >
+                                    Reset
+                                  </button>
                                 </Form>
+                              
                             )
                         }
                     </Formik>
-
+                   
                 </div>
+                
             </div>
         )
     }       

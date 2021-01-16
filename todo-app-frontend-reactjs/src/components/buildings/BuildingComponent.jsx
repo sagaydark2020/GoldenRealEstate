@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import BuildingListServices from '../../service/BuildingListServices';
+import { Row, Col } from 'react-bootstrap';
 
 class BuildingComponent extends Component {
 
@@ -41,7 +42,6 @@ class BuildingComponent extends Component {
         } else if (!values.buildingLocation ) {
             errors.buildingLocation = 'Enter a valid building location'
         } 
-
         return errors
 
     }
@@ -68,12 +68,12 @@ class BuildingComponent extends Component {
     render() {
 
         let { buildingName, buildingLocation, id } = this.state
-        console.log(this.state)
-       
+        let stateCondition = this.state.id == -1 ? "Add Property" : "Edit Property"
         return (
-            <div>
-                <h3> Add New Building  </h3>
-                <div className="container">
+            
+            <div className="container">
+                 <h4>{stateCondition}</h4>
+                <div className="containerForm">
                     <Formik
                         initialValues={{ id, buildingName, buildingLocation }}
                         onSubmit={this.onSubmit}
@@ -91,12 +91,24 @@ class BuildingComponent extends Component {
                                         <Field className="form-control" type="text" name="id" hidden />
                                     </fieldset>
                                     <fieldset className="form-group">
-                                        <label>Building Name</label>
+                                        <Row>
+                                        <Col>
+                                        <label>Property Name</label>
+                                        </Col>
+                                        <Col>
                                         <Field className="form-control" type="text" name="buildingName" />
+                                        </Col>
+                                        </Row>
                                     </fieldset>
                                     <fieldset className="form-group">
-                                        <label>Building Location</label>
+                                    <Row>
+                                        <Col>
+                                        <label>Property Location</label>
+                                        </Col>
+                                        <Col>
                                         <Field className="form-control" type="text" name="buildingLocation" />
+                                        </Col>
+                                        </Row>
                                     </fieldset>
                                     <button className="btn btn-success" type="submit">Save</button>
                                 </Form>

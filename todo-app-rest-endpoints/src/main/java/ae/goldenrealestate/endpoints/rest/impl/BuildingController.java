@@ -12,7 +12,6 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import java.net.URI;
 import java.util.List;
-import java.util.Optional;
 
 @RestController
 @CrossOrigin(origins = {"http://localhost:3000", "http://localhost:4200"})
@@ -31,15 +30,15 @@ public class BuildingController extends AssetResource {
     }
 
     @GetMapping("/api/buildings/{id}")
-    public ResponseEntity<Optional<BuildingEntity>> getBuildingById(@PathVariable long id) {
-        Optional<BuildingEntity> fetchedEntities = buildingService.findBuildingById(id);
+    public ResponseEntity<BuildingEntity> getBuildingById(@PathVariable long id) {
+        BuildingEntity fetchedEntities = buildingService.findBuildingById(id);
         LOGGER.info(" Fetched entities by id {} ", fetchedEntities);
         return ResponseEntity.ok().body(fetchedEntities);
     }
 
     @DeleteMapping("/api/buildings/{id}")
-    public ResponseEntity<Optional<BuildingEntity>> deleteBuildingById(@PathVariable long id) {
-        Optional<BuildingEntity> fetchedEntities = buildingService.deleteBuildingById(id);
+    public ResponseEntity<BuildingEntity> deleteBuildingById(@PathVariable long id) {
+        BuildingEntity fetchedEntities = buildingService.deleteBuildingById(id);
         LOGGER.info(" Deleted entities {} ", fetchedEntities);
         return ResponseEntity.ok().body(fetchedEntities);
     }

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import TodoListServices from '../../service/TodoListServices';
-import { Row , Col, NavDropdown} from 'react-bootstrap'
 class ListTodoComponent extends Component {
 
     constructor(props) {
@@ -51,14 +50,20 @@ class ListTodoComponent extends Component {
         return (
             
             <div className="container">
-                  <h2> View Projects </h2>
-                    <div className="container ">
+                    <h4> Projects </h4>                
+                    
+                    <div>
+                        <button className="btn btn-primary" onClick={this.addTodoClicked}>Add Project</button>&nbsp;
+                    </div>
+                    <div className="table-container">
                     <table className="table">
                         <thead>
                             <tr>
                                 <th>Id</th>
-                                <th>Todo</th>
-                                <th>Details</th>
+                                <th>Project Name</th>
+                                <th>Project Description</th>
+                                <th>Building</th>
+                                <th>Assigned</th>
                                 <th>&nbsp;</th>
                                 <th>&nbsp;</th>
                             </tr>
@@ -71,17 +76,15 @@ class ListTodoComponent extends Component {
                                             <td>{todo.id}</td>
                                             <td>{todo.name}</td>
                                             <td>{todo.description}</td>
-                                            <td><button className="btn btn-warning" onClick={() => this.deleteTodoClicked(todo.id , todo.name)}>Delete</button></td>
-                                            <td><button className="btn btn-success" onClick={() => this.updateTodoClicked(todo.id)}>Update</button></td>
+                                            <td>{todo.building.buildingName}</td>
+                                            <td>{todo.user.userName}</td>
+                                            <td><button className="btn btn-warning btn-xs" onClick={() => this.deleteTodoClicked(todo.id , todo.name)}>Delete</button></td>
+                                            <td><button className="btn btn-success btn-xs" onClick={() => this.updateTodoClicked(todo.id)}>Update</button></td>
                                         </tr>
                                 )
                             }
                         </tbody>
                     </table>
-                    <div className="row">
-                        <button className="btn btn-success" onClick={this.addTodoClicked}>Add Todo</button>
-                    </div>
-                    
                 </div>
               
             </div>

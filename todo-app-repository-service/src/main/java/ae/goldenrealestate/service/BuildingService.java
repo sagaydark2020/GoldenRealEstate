@@ -6,7 +6,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 
 import java.util.List;
-import java.util.Optional;
 
 @Configuration
 public class BuildingService {
@@ -22,14 +21,14 @@ public class BuildingService {
         return buildingRepository.save(buildingEntity);
     }
 
-    public Optional<BuildingEntity> deleteBuildingById(long id) {
-        Optional<BuildingEntity> buildingEntity = findBuildingById(id);
+    public BuildingEntity deleteBuildingById(long id) {
+        BuildingEntity buildingEntity = findBuildingById(id);
         buildingRepository.deleteById(id);
         return buildingEntity;
     }
 
-    public Optional<BuildingEntity> findBuildingById(long id) {
-        return buildingRepository.findById(id);
+    public BuildingEntity findBuildingById(long id) {
+        return buildingRepository.findById(id).get();
     }
 
     public List<BuildingEntity> getAllBuildings() {

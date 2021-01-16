@@ -7,7 +7,7 @@ import { BrowserRouter as Router , Link} from 'react-router-dom'
 class TodoNavBar extends Component {
     render() {
         return (<> 
-        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+        <Navbar collapseOnSelect expand="lg" bg="dark" className="customNavBar" variant="dark">
             <Navbar.Brand href="##"> Golden Real Estate </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
@@ -30,7 +30,7 @@ class TodoNavBar extends Component {
                     </Link>
                 </NavDropdown>
                 <NavDropdown title="Project" id="collasible-nav-dropdown">
-                    <NavDropdown.Item href="/todo/:id">Add Todo </NavDropdown.Item>
+                    <NavDropdown.Item href="/todo/-1">Add Todo </NavDropdown.Item>
                     <NavDropdown.Item href="/todo/">View Todo</NavDropdown.Item>
                 </NavDropdown>
                 </Nav>
