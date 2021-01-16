@@ -13,7 +13,9 @@ class TodoComponent extends Component {
             id: this.props.match.params.id,
             description: '',
             buildings: [] , 
-            users: []
+            users: [],
+            buildings1: [] , 
+            users1: []
         }
         this.onSubmit = this.onSubmit.bind(this)
         this.validate = this.validate.bind(this)
@@ -21,35 +23,41 @@ class TodoComponent extends Component {
 
     componentDidMount() {
             
-        let buildings = [];
-        BuildingListServices.retrieveAllBuildings()//HARDCODED
-        .then(
-            response => {
-                console.log(response);
-                this.setState({ buildings: response.data })
-            }
-        )
-        UserListServices.retrieveAllUsers()//HARDCODED
-        .then(
-            response => {
-                console.log(response);
-                this.setState({ users: response.data })
-            }
-        )
-        
+        this.fetchDependencies();
         if (this.state.id == -1) {
-        
-       
             return
         }
+       this.fetchProjectInformation();
+
+    }
+
+    fetchDependencies() {
+        let buildings = [];
+        BuildingListServices.retrieveAllBuildings() //HARDCODED
+            .then(
+                response => {
+                    console.log("Response from Retrieve Buildings : {} ", response.data);
+                    this.setState({ buildings: response.data });
+                }
+            );
+        UserListServices.retrieveAllUsers() //HARDCODED
+            .then(
+                response => {
+                    console.log("Response from Retrieve Users : {} ", response.data);
+                    this.setState({ users: response.data });
+                }
+            );
+    }
+
+    fetchProjectInformation() {
         TodoListServices.retrieveTodo(this.state.id)
             .then(response => this.setState({
+                id: response.data.id,
                 name: response.data.name,
                 description: response.data.description,
-                buildings : [response.data.building],
-                users : [response.data.user]
-            }))
-
+                buildings1: [response.data.building],
+                users1: [response.data.user]
+            }));
     }
 
     validate(values) {
@@ -88,17 +96,20 @@ class TodoComponent extends Component {
     render() {
 
         let { description, name, id, buildingName, buildingId, userId} = this.state
+       // let { description, name, id, buildingName} = this.state
         let stateCondition = this.state.id == -1 ? "Add Project" : "Edit Project"
-        this.state.buildings.map((building) => buildingId=building.id)
-        this.state.users.map((user) =>userId=user.id)
+        this.state.buildings1.map((building) => buildingId=building.id)
+        this.state.users1.map((user) =>userId=user.id)
         console.log(userId)
         console.log(buildingId)
+        console.log(this.state)
         return (
             <div className="container">
                  <h4> {stateCondition}</h4>
                 <div className="containerForm">
                     <Formik
                         initialValues={{ id, name, description,buildingName, buildingName:buildingId, userName:userId }}
+                        //initialValues={{ id, name, description,buildingName}}
                         onSubmit={this.onSubmit}
                         validateOnChange={false}
                         validateOnBlur={false}
