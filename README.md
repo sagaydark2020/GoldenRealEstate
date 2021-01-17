@@ -7,9 +7,13 @@ renewing the fire extinguishers etc.
 ####Scope : 
 
 Properties should be managed (like adding, updating & deleting)
+
 Users should be managed (like adding, updating & deleting)
+
 Projects should be managed (like adding, updating & deleting)
+
 Projects should be assigned to existing user , existing building.
+
 Project progress can be updated per project
 
 ------------
@@ -19,7 +23,7 @@ Project progress can be updated per project
 
 **Frontend** : Reactjs, Bootstrap (for react), JS/HTML, Formik
 
-**Backend  **: Spring Rest, Spring Boot, Hibernate, Spring JPA/Data, PostgreSQL
+**Backend** : Spring Rest, Spring Boot, Hibernate, Spring JPA/Data, PostgreSQL
 
 **Database**  Docker for PostgreSQL
 
