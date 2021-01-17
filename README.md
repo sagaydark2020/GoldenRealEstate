@@ -26,7 +26,7 @@ Project progress can be updated per project
 
 Golden Real Estate Todo Application (Project Screen)
 
-[![dog](https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=1.00xw:0.669xh;0,0.190xh&resize=980:* "dog")](https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=1.00xw:0.669xh;0,0.190xh&resize=980:* "dog")
+[![GoldenRealEstate](https://github.com/sagaydark2020/GoldenRealEstate/blob/main/GoldenRealEstateProject.png:* "GoldenRealEstate")](https://github.com/sagaydark2020/GoldenRealEstate/blob/main/GoldenRealEstateProject.png:* "GoldenRealEstate")
 
 
 ------------
