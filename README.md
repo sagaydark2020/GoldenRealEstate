@@ -1,44 +1,57 @@
+### Golden Real Estate - Todo Application 
+
 Create a TODO List to Track Project Progress for Various buildings of specualtive company "Golden Real Estate"
 The projects are activities to remember and collaborate on; like fixing some defects, cleaning the facade,
 renewing the fire extinguishers etc.
 
-Scope : 
+####Scope : 
 
-Must be able to create new Todo
-Todo should be able to assign per building
-Todo should be able to assign per person
-Building should be managed as category
-Person should be managed as entity interacting on the category
-Project status should be visible per building and per person it is assigned to
+Properties should be managed (like adding, updating & deleting)
+Users should be managed (like adding, updating & deleting)
+Projects should be managed (like adding, updating & deleting)
+Projects should be assigned to existing user , existing building.
+Project progress can be updated per project
 
-Technologies
+------------
 
-Frontend : Reactjs, Bootstrap (for react), JS/HTML, Formik
-Backend  : Spring Rest, Spring Boot, Hibernate, Spring JPA/Data, PostgreSQL
 
-Running the Application
+####Technologies
+
+**Frontend** : Reactjs, Bootstrap (for react), JS/HTML, Formik
+**Backend  **: Spring Rest, Spring Boot, Hibernate, Spring JPA/Data, PostgreSQL
+**Database**  Docker for PostgreSQL
+
+
+------------
+
+Golden Real Estate Todo Application (Project Screen)
+
+[![dog](https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=1.00xw:0.669xh;0,0.190xh&resize=980:* "dog")](https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=1.00xw:0.669xh;0,0.190xh&resize=980:* "dog")
+
+
+------------
+
+
+### Running the Application
 
 After Downloading the application, Goto the root folder and perform the following commands''
 
-mvn clean install
+`mvn clean install`
 
 Application can be downloaded and run has two instances
-a) Backend module
-b) Frontend module
-
-Backend Module
+- Backend module
+- Frontend module
 
 To Run backend module follow the steps
-1. Traverse to project folder
-2. CD to folder todo-app-bootstrap
-3. mvn jetty:run
+- Traverse to project folder
+-  CD to folder todo-app-bootstrap
+-  `mvn jetty:run`
 
 To Run FrontEnd Module follow the steps
-1. Traverse to project folder
-2. CD to folder todo-app-frontend-reactjs
-3. npm install
-4. npm start
+-  Traverse to project folder
+- CD to folder todo-app-frontend-reactjs
+- `npm install`
+- `npm start`
 
 
-
-
+------------
