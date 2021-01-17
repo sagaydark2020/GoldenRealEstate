@@ -35,7 +35,7 @@ Golden Real Estate Todo Application (Project Screen)
 [![GoldenRealEstate](https://github.com/sagaydark2020/GoldenRealEstate/blob/main/GoldenRealEstateProject.png "GoldenRealEstate")](https://github.com/sagaydark2020/GoldenRealEstate/blob/main/GoldenRealEstateProject.png "GoldenRealEstate")
 
 Project Screens
-[![GoldenRealEstate](https://github.com/sagaydark2020/GoldenRealEstate/blob/main/GoldenRealEstateProject.png "GoldenRealEstate")](https://github.com/sagaydark2020/GoldenRealEstate/blob/main/GoldenRealEstateProject.png "GoldenRealEstate")
+[![GoldenRealEstate](https://github.com/sagaydark2020/GoldenRealEstate/blob/main/ProjectCollage.png "GoldenRealEstate")](https://github.com/sagaydark2020/GoldenRealEstate/blob/main/ProjectCollage.png "GoldenRealEstate")
 ------------
 
 
