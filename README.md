@@ -64,20 +64,30 @@ To Configure database, use two options using docker or local installation of pos
 - Application.properties has configuration for the database endpoint url/access credentials
 
 `spring.datasource.url= jdbc:postgresql://localhost:5432/tests`
+
 `spring.datasource.username= sylvain`
+
 `spring.datasource.password= sylvain`
 
 - installing database on docker
+
 `docker run -p 5432:5432 --name postgre-db -e POSTGRES_PASSWORD=admin -d postgres:11.5`
+
 Note : postgresql can disable superuser password by configuring attribute in docker run
 
 - Configure privilege and database
 
+
 `docker exec -it postgre-db bash`
+
 'sudo -u postgres psql'
+
 'postgres=# create database tests;'
+
 'postgres=# create user sylvain with encrypted password 'sylvain';'
+
 'postgres=# grant all privileges on database tests to sylvain;'
+
 
 
 
