@@ -18,7 +18,9 @@ Project progress can be updated per project
 ####Technologies
 
 **Frontend** : Reactjs, Bootstrap (for react), JS/HTML, Formik
+
 **Backend  **: Spring Rest, Spring Boot, Hibernate, Spring JPA/Data, PostgreSQL
+
 **Database**  Docker for PostgreSQL
 
 
