@@ -80,13 +80,13 @@ Note : postgresql can disable superuser password by configuring attribute in doc
 
 `docker exec -it postgre-db bash`
 
-'sudo -u postgres psql'
+'sudo -u postgres psql`
 
-'postgres=# create database tests;'
+`postgres=# create database tests;`
 
-'postgres=# create user sylvain with encrypted password 'sylvain';'
+`postgres=# create user sylvain with encrypted password 'sylvain';`
 
-'postgres=# grant all privileges on database tests to sylvain;'
+`postgres=# grant all privileges on database tests to sylvain;`
 
 
 
