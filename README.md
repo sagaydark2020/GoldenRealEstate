@@ -13,8 +13,32 @@ Project status should be visible per building and per person it is assigned to
 
 Technologies
 
-Frontend : Reactjs, Bootstrap (for react), JS/HTML
-
+Frontend : Reactjs, Bootstrap (for react), JS/HTML, Formik
 Backend  : Spring Rest, Spring Boot, Hibernate, Spring JPA/Data, PostgreSQL
 
-Version 2.0
+Running the Application
+
+After Downloading the application, Goto the root folder and perform the following commands''
+
+mvn clean install
+
+Application can be downloaded and run has two instances
+a) Backend module
+b) Frontend module
+
+Backend Module
+
+To Run backend module follow the steps
+1. Traverse to project folder
+2. CD to folder todo-app-bootstrap
+3. mvn jetty:run
+
+To Run FrontEnd Module follow the steps
+1. Traverse to project folder
+2. CD to folder todo-app-frontend-reactjs
+3. npm install
+4. npm start
+
+
+
+
