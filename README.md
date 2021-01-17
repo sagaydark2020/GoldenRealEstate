@@ -95,3 +95,11 @@ Configure privilege and database
 
 
 ------------
+
+### Working with the application
+- Select People -> Add new People 
+- Select Property -> Add New Property 
+- Select Project -> Add New Project 
+- Perform operations such as changing the project state, assignment etc
+
+------------
