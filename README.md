@@ -49,19 +49,22 @@ Application can be downloaded and run has two instances
 - Frontend module
 - Configuring database
 
+##### Backend Module
 To Run backend module follow the steps
 - Traverse to project folder
 -  CD to folder todo-app-bootstrap
 -  `mvn jetty:run`
 
+##### Frontend Module
 To Run FrontEnd Module follow the steps
 -  Traverse to project folder
 - CD to folder todo-app-frontend-reactjs
 - `npm install`
 - `npm start`
 
-To Configure database, use two options using docker or local installation of postgres
-- Application.properties has configuration for the database endpoint url/access credentials
+##### Configure database, 
+To Configure database use two options using docker or local installation of postgres
+Application.properties has configuration for the database endpoint url/access credentials
 
 `spring.datasource.url= jdbc:postgresql://localhost:5432/tests`
 
@@ -69,13 +72,13 @@ To Configure database, use two options using docker or local installation of pos
 
 `spring.datasource.password= sylvain`
 
-- installing database on docker
+installing database on docker
 
 `docker run -p 5432:5432 --name postgre-db -e POSTGRES_PASSWORD=admin -d postgres:11.5`
 
 Note : postgresql can disable superuser password by configuring attribute in docker run
 
-- Configure privilege and database
+Configure privilege and database
 
 
 `docker exec -it postgre-db bash`
