@@ -35,6 +35,21 @@ public class TodoController extends AssetResource {
         }
     }
 
+
+    @PostMapping("/api/todoByFilter")
+    public ResponseEntity<List<TodoEntity>> getTodoByFilter(@RequestBody ProjectCompositeDto
+                                                                         projectCompositeDto) {
+        try {
+            List<TodoEntity> fetchedEntities = todoService.getTodosByFilter(projectCompositeDto);
+            LOGGER.info(" Filtering Query Fetched entities {} ", fetchedEntities);
+            return ResponseEntity.ok().body(fetchedEntities);
+        } catch (Exception e) {
+            e.printStackTrace();
+            LOGGER.error("Exception while retrieving Project . Stacktrace: \n{}", e.getStackTrace());
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
+        }
+    }
+
     @GetMapping("/api/todo/{id}")
     public ResponseEntity<TodoEntity> getTodoById(@PathVariable long id) {
         try {

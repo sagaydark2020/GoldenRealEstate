@@ -5,6 +5,7 @@ import ae.goldenrealestate.data.model.BuildingEntity;
 import ae.goldenrealestate.data.model.ProjectProgress;
 import ae.goldenrealestate.data.model.TodoEntity;
 import ae.goldenrealestate.data.model.UserEntity;
+import ae.goldenrealestate.data.specification.TodoSpecification;
 import ae.goldenrealestate.repository.BuildingRepository;
 import ae.goldenrealestate.repository.TodoRepository;
 import ae.goldenrealestate.repository.UserRepository;
@@ -57,5 +58,11 @@ public class TodoService {
 
     public List<TodoEntity> getAllTodos() {
         return todoRepository.findAll();
+    }
+
+    public List<TodoEntity> getTodosByFilter(ProjectCompositeDto searchCriteria) {
+        TodoSpecification specification = new TodoSpecification(searchCriteria);
+        LOGGER.info(" TodoSpecification : {} " , specification);
+        return todoRepository.findAll(specification);
     }
 }
