@@ -26,7 +26,7 @@ Project progress can be updated per project
 
 Golden Real Estate Todo Application (Project Screen)
 
-[![GoldenRealEstate](https://github.com/sagaydark2020/GoldenRealEstate/blob/main/GoldenRealEstateProject.png:* "GoldenRealEstate")](https://github.com/sagaydark2020/GoldenRealEstate/blob/main/GoldenRealEstateProject.png:* "GoldenRealEstate")
+[![GoldenRealEstate](https://github.com/sagaydark2020/GoldenRealEstate/blob/main/GoldenRealEstateProject.png "GoldenRealEstate")](https://github.com/sagaydark2020/GoldenRealEstate/blob/main/GoldenRealEstateProject.png "GoldenRealEstate")
 
 
 ------------
