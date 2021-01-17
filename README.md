@@ -4,7 +4,7 @@ Create a TODO List to Track Project Progress for Various buildings of specualtiv
 The projects are activities to remember and collaborate on; like fixing some defects, cleaning the facade,
 renewing the fire extinguishers etc.
 
-####Scope : 
+#### Scope : 
 
 Properties should be managed (like adding, updating & deleting)
 
@@ -19,7 +19,7 @@ Project progress can be updated per project
 ------------
 
 
-####Technologies
+#### Technologies
 
 **Frontend** : Reactjs, Bootstrap (for react), JS/HTML, Formik
 
