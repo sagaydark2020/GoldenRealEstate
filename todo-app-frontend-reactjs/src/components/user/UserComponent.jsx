@@ -127,7 +127,7 @@ class UserComponent extends Component {
                     </Formik>
                    
                 </div>
-                
+              
             </div>
         )
     }       

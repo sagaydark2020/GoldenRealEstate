@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import TodoNavBar from './TodoNavBar';
-import { Card, Row, Col, Nav, Navbar } from 'react-bootstrap';
+import {  Row, Col, Nav, Navbar } from 'react-bootstrap';
 import ListTodoComponent from './todo/ListTodoComponent';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import TodoComponent from './todo/TodoComponent';
@@ -9,6 +8,7 @@ import UserComponent from './user/UserComponent';
 import BuildingComponent from './buildings/BuildingComponent';
 import ListBuildingsComponent from './buildings/ListBuildingsComponent';
 import AppFooter from './utilities/AppFooter';
+import HomeSplash from './HomeSplash';
 
 class TodoApp extends Component {
 
@@ -33,7 +33,7 @@ class TodoApp extends Component {
                                     <Col xs lg="2">
                                       <div className="menu-container">
                                         <Nav defaultActiveKey="/" className="flex-column">
-                                            <Nav.Link href="/todo/"> Home </Nav.Link>
+                                            <Nav.Link href="/"> Home </Nav.Link>
                                             <Nav.Link href="/todo/"> Project </Nav.Link>
                                             <Nav.Link href="/buildings/"> Property </Nav.Link>
                                             <Nav.Link href="/user/"> People </Nav.Link>
@@ -43,7 +43,7 @@ class TodoApp extends Component {
                                       <Col>  
                                           <div className="content-container">
                                               <Switch>
-                                                <Route path="/" exact component={ListTodoComponent} />
+                                                <Route path="/" exact component={HomeSplash} />
                                                 <Route path="/todo" exact  component={ListTodoComponent} />
                                                 <Route path="/todo/:id" component={TodoComponent} />
                                                 <Route path="/user" exact  component={ListUserComponent} />

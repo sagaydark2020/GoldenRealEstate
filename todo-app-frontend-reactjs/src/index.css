@@ -80,6 +80,11 @@ body {
     padding:20px;
     border-radius: 15px 15px 15px 15px;
 }
+
+.containerSearchForm {
+    border:1px solid #336699;
+    padding:5px;
+}
   
 ::-webkit-scrollbar {
     width: 20px;

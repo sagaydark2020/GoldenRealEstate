@@ -36,7 +36,12 @@ class ListBuildingsComponent extends Component {
                     this.setState({ message: `Delete of Building ${name} Successful` })
                     this.refreshBuildings()
                 }
-            )    
+            ).catch(
+                (error) =>  {
+                      this.setState({ message: `ERR:CANNOT DELETE Property is associated with Project` })
+                      this.refreshBuildings()
+                  }
+              )    
     }
 
     updateBuildingClicked(id) {
@@ -83,7 +88,7 @@ class ListBuildingsComponent extends Component {
                     </table>
                     
                 </div>
-              
+                {this.state.message && <div class="alert alert-success">{this.state.message}</div>} 
             </div>
           
         )

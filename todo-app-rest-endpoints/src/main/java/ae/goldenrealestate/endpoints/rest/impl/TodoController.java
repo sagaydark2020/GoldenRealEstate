@@ -36,7 +36,7 @@ public class TodoController extends AssetResource {
     }
 
 
-    @PostMapping("/api/todoByFilter")
+        @PostMapping("/api/todoByFilter")
     public ResponseEntity<List<TodoEntity>> getTodoByFilter(@RequestBody ProjectCompositeDto
                                                                          projectCompositeDto) {
         try {

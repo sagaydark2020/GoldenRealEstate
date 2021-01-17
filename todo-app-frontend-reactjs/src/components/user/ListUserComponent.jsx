@@ -32,10 +32,15 @@ class ListUserComponent extends Component {
         UserListServices.deleteUser(id)
             .then(
                 response => {
-                    this.setState({ message: `Delete of User ${name} Successful` })
+                    this.setState({ message: `Delete of User Successful` })
                     this.refreshUsers()
                 }
-            )    
+              ).catch(
+                  (error) =>  {
+                        this.setState({ message: `ERR:CANNOT DELETE User is associated with Project` })
+                        this.refreshUsers()
+                    }
+                )
     }
 
     updateUserClicked(id) {
@@ -81,7 +86,7 @@ class ListUserComponent extends Component {
                         </tbody>
                     </table>
                 </div>
-              
+                {this.state.message && <div class="alert alert-success">{this.state.message}</div>} 
             </div>
           
         )

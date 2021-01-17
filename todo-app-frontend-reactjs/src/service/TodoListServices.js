@@ -8,6 +8,10 @@ class TodoListServices {
         return axios.get(`${TODO_API_URL}/api/todo`);
     }
 
+    filterByCriteria(todo) {
+        return axios.post(`${TODO_API_URL}/api/todoByFilter`,todo);
+    }
+
     deleteTodo(id) {
         //console.log('executed service')
         return axios.delete(`${TODO_API_URL}/api/todo/${id}`);
