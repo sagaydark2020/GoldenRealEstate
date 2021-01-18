@@ -32,7 +32,9 @@ Project can be filter per person, per building and based on the progress status
 
 ------------
 
-Golden Real Estate Todo Application (Project Screen)
+Golden Real Estate Todo Application (Project Screen) 
+
+Theme : Based on blend of Glass Morphism (UX) latest and traditional business flows
 
 [![GoldenRealEstate](https://github.com/sagaydark2020/GoldenRealEstate/blob/main/GoldenRealEstateProject.png "GoldenRealEstate")](https://github.com/sagaydark2020/GoldenRealEstate/blob/main/GoldenRealEstateProject.png "GoldenRealEstate")
 
