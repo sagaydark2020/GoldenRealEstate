@@ -16,6 +16,8 @@ Projects should be assigned to existing user , existing building.
 
 Project progress can be updated per project
 
+Project can be filter per person, per building and based on the progress status
+
 ------------
 
 
