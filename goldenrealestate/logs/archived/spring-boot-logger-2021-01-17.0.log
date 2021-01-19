@@ -1,0 +1,165 @@
+2021-01-17 04:16:06,300 INFO org.springframework.boot.StartupInfoLogger [main] Starting BootstrapTodoApplicationTests using Java 11.0.8 on sagayaraj with PID 8344 (started by sagayaraj in C:\SagayHome\PersonalDev\ClientProjects\GoldenRealEstate\GoldenRealEstate\todo-app-bootstrap)
+2021-01-17 04:16:06,300 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.4.1, Spring v5.3.2
+2021-01-17 04:16:06,300 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-01-17 04:16:07,465 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-01-17 04:16:07,603 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 126 ms. Found 3 JPA repository interfaces.
+2021-01-17 04:16:09,158 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-01-17 04:16:09,307 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.25.Final
+2021-01-17 04:16:09,631 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-01-17 04:16:10,361 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2021-01-17 04:16:10,565 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-01-17 04:16:10,596 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-01-17 04:16:12,087 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-01-17 04:16:12,100 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-01-17 04:16:12,998 INFO org.eclipse.jetty.util.log.Log [main] Logging initialized @9753ms to org.eclipse.jetty.util.log.Slf4jLog
+2021-01-17 04:16:13,263 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-01-17 04:16:13,781 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-17 04:16:14,528 INFO org.springframework.boot.StartupInfoLogger [main] Started BootstrapTodoApplicationTests in 9.094 seconds (JVM running for 11.29)
+2021-01-17 04:16:14,875 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-17 04:16:14,875 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringContextShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-01-17 04:16:14,875 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2021-01-17 04:16:14,916 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
+2021-01-17 11:43:28,486 INFO org.springframework.boot.StartupInfoLogger [main] Starting BootstrapTodoApplication using Java 11.0.8 on sagayaraj with PID 19472 (C:\SagayHome\PersonalDev\ClientProjects\GoldenRealEstate\GoldenRealEstate\todo-app-bootstrap\target\classes started by sagayaraj in C:\SagayHome\PersonalDev\ClientProjects\GoldenRealEstate\GoldenRealEstate\todo-app-bootstrap)
+2021-01-17 11:43:28,502 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.4.1, Spring v5.3.2
+2021-01-17 11:43:28,502 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-01-17 11:43:29,109 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-01-17 11:43:29,209 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 79 ms. Found 3 JPA repository interfaces.
+2021-01-17 11:43:29,726 INFO org.eclipse.jetty.util.log.Log [main] Logging initialized @2412ms to org.eclipse.jetty.util.log.Slf4jLog
+2021-01-17 11:43:30,089 INFO org.springframework.boot.web.embedded.jetty.JettyServletWebServerFactory [main] Server initialized with port: 8080
+2021-01-17 11:43:30,089 INFO org.eclipse.jetty.server.Server [main] jetty-9.4.35.v20201120; built: 2020-11-20T21:17:03.964Z; git: bdc54f03a5e0a7e280fab27f55c3c75ee8da89fb; jvm 11.0.8+10-LTS
+2021-01-17 11:43:30,127 INFO org.eclipse.jetty.server.handler.ContextHandler$Context [main] Initializing Spring embedded WebApplicationContext
+2021-01-17 11:43:30,127 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1568 ms
+2021-01-17 11:43:30,227 INFO org.eclipse.jetty.server.session.DefaultSessionIdManager [main] DefaultSessionIdManager workerName=node0
+2021-01-17 11:43:30,227 INFO org.eclipse.jetty.server.session.DefaultSessionIdManager [main] No SessionScavenger set, using defaults
+2021-01-17 11:43:30,227 INFO org.eclipse.jetty.server.session.HouseKeeper [main] node0 Scavenging every 600000ms
+2021-01-17 11:43:30,243 INFO org.eclipse.jetty.server.handler.ContextHandler [main] Started o.s.b.w.e.j.JettyEmbeddedWebAppContext@2ecf5915{application,/,[file:///C:/Users/sagayaraj/AppData/Local/Temp/jetty-docbase.8080.15701624680928742426/],AVAILABLE}
+2021-01-17 11:43:30,243 INFO org.eclipse.jetty.server.Server [main] Started @2935ms
+2021-01-17 11:43:30,391 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-01-17 11:43:30,459 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.25.Final
+2021-01-17 11:43:30,643 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-01-17 11:43:30,790 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2021-01-17 11:43:30,944 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-01-17 11:43:30,960 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-01-17 11:43:31,881 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-01-17 11:43:31,886 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-01-17 11:43:32,230 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-01-17 11:43:32,354 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-17 11:43:32,575 INFO org.eclipse.jetty.server.handler.ContextHandler$Context [main] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-17 11:43:32,575 INFO org.springframework.web.servlet.FrameworkServlet [main] Initializing Servlet 'dispatcherServlet'
+2021-01-17 11:43:32,575 INFO org.springframework.web.servlet.FrameworkServlet [main] Completed initialization in 0 ms
+2021-01-17 11:43:32,613 INFO org.eclipse.jetty.server.AbstractConnector [main] Started ServerConnector@51ec2856{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2021-01-17 11:43:32,613 INFO org.springframework.boot.web.embedded.jetty.JettyWebServer [main] Jetty started on port(s) 8080 (http/1.1) with context path '/'
+2021-01-17 11:43:32,629 INFO org.springframework.boot.StartupInfoLogger [main] Started BootstrapTodoApplication in 4.746 seconds (JVM running for 5.32)
+2021-01-17 11:43:44,079 INFO ae.goldenrealestate.endpoints.rest.impl.TodoController [qtp1002406942-24]  Fetched entities [] 
+2021-01-17 11:43:45,861 INFO ae.goldenrealestate.endpoints.rest.impl.UserController [qtp1002406942-20]  Fetched entities [] 
+2021-01-17 11:43:49,950 INFO ae.goldenrealestate.endpoints.rest.impl.UserController [qtp1002406942-23]  Fetched entities [UserEntity{userId=1, userName='jyothimarnedi', userEmail='sagay81@gmail.com'}] 
+2021-01-17 11:43:54,226 INFO ae.goldenrealestate.endpoints.rest.impl.UserController [qtp1002406942-24]  Fetched entities [UserEntity{userId=1, userName='jyothimarnedi', userEmail='sagay81@gmail.com'}, UserEntity{userId=2, userName='sagayarajv', userEmail='sagay81@gmail.com'}] 
+2021-01-17 11:43:55,743 INFO ae.goldenrealestate.endpoints.rest.impl.BuildingController [qtp1002406942-20]  Fetched entities [] 
+2021-01-17 11:43:58,864 INFO ae.goldenrealestate.endpoints.rest.impl.BuildingController [qtp1002406942-24]  Fetched entities [BuildingEntity{id=1, buildingName='bulding1', buildingLocation='al farhan'}] 
+2021-01-17 11:44:03,297 INFO ae.goldenrealestate.endpoints.rest.impl.BuildingController [qtp1002406942-24]  Fetched entities [BuildingEntity{id=1, buildingName='bulding1', buildingLocation='al farhan'}, BuildingEntity{id=2, buildingName='bulding1444', buildingLocation='asasafarhan'}] 
+2021-01-17 11:44:04,645 INFO ae.goldenrealestate.endpoints.rest.impl.TodoController [qtp1002406942-19]  Fetched entities [] 
+2021-01-17 11:44:05,379 INFO ae.goldenrealestate.endpoints.rest.impl.BuildingController [qtp1002406942-24]  Fetched entities [BuildingEntity{id=1, buildingName='bulding1', buildingLocation='al farhan'}, BuildingEntity{id=2, buildingName='bulding1444', buildingLocation='asasafarhan'}] 
+2021-01-17 11:44:05,382 INFO ae.goldenrealestate.endpoints.rest.impl.UserController [qtp1002406942-22]  Fetched entities [UserEntity{userId=1, userName='jyothimarnedi', userEmail='sagay81@gmail.com'}, UserEntity{userId=2, userName='sagayarajv', userEmail='sagay81@gmail.com'}] 
+2021-01-17 11:44:11,679 INFO ae.goldenrealestate.service.TodoService [qtp1002406942-23] Creating Project : ae.goldenrealestate.data.dto.ProjectCompositeDto@1cf0cf7a 
+2021-01-17 11:44:11,696 INFO ae.goldenrealestate.service.TodoService [qtp1002406942-23] Building  : Optional[BuildingEntity{id=2, buildingName='bulding1444', buildingLocation='asasafarhan'}] 
+2021-01-17 11:44:11,703 INFO ae.goldenrealestate.service.TodoService [qtp1002406942-23] User  : Optional[UserEntity{userId=2, userName='sagayarajv', userEmail='sagay81@gmail.com'}] 
+2021-01-17 11:44:11,760 INFO ae.goldenrealestate.endpoints.rest.impl.TodoController [qtp1002406942-18]  Fetched entities [TodoEntity{id=1, name='sagayaraj', description='asasas', building=BuildingEntity{id=2, buildingName='bulding1444', buildingLocation='asasafarhan'}}] 
+2021-01-17 11:44:14,655 INFO ae.goldenrealestate.endpoints.rest.impl.BuildingController [qtp1002406942-23]  Fetched entities [BuildingEntity{id=1, buildingName='bulding1', buildingLocation='al farhan'}, BuildingEntity{id=2, buildingName='bulding1444', buildingLocation='asasafarhan'}] 
+2021-01-17 11:44:14,658 INFO ae.goldenrealestate.endpoints.rest.impl.UserController [qtp1002406942-20]  Fetched entities [UserEntity{userId=1, userName='jyothimarnedi', userEmail='sagay81@gmail.com'}, UserEntity{userId=2, userName='sagayarajv', userEmail='sagay81@gmail.com'}] 
+2021-01-17 11:44:14,665 INFO ae.goldenrealestate.endpoints.rest.impl.TodoController [qtp1002406942-22]  Fetched entities by id TodoEntity{id=1, name='sagayaraj', description='asasas', building=BuildingEntity{id=2, buildingName='bulding1444', buildingLocation='asasafarhan'}} 
+2021-01-17 11:44:16,634 INFO ae.goldenrealestate.service.TodoService [qtp1002406942-22] Creating Project : ae.goldenrealestate.data.dto.ProjectCompositeDto@6de27e69 
+2021-01-17 11:44:16,645 INFO ae.goldenrealestate.service.TodoService [qtp1002406942-22] Building  : Optional[BuildingEntity{id=2, buildingName='bulding1444', buildingLocation='asasafarhan'}] 
+2021-01-17 11:44:16,652 INFO ae.goldenrealestate.service.TodoService [qtp1002406942-22] User  : Optional[UserEntity{userId=2, userName='sagayarajv', userEmail='sagay81@gmail.com'}] 
+2021-01-17 11:44:16,701 INFO ae.goldenrealestate.endpoints.rest.impl.TodoController [qtp1002406942-17]  Fetched entities [TodoEntity{id=1, name='sagayaraj', description='asasas', building=BuildingEntity{id=2, buildingName='bulding1444', buildingLocation='asasafarhan'}}] 
+2021-01-17 11:44:19,000 INFO ae.goldenrealestate.endpoints.rest.impl.UserController [qtp1002406942-17]  Fetched entities [UserEntity{userId=1, userName='jyothimarnedi', userEmail='sagay81@gmail.com'}, UserEntity{userId=2, userName='sagayarajv', userEmail='sagay81@gmail.com'}] 
+2021-01-17 11:44:19,001 INFO ae.goldenrealestate.endpoints.rest.impl.BuildingController [qtp1002406942-24]  Fetched entities [BuildingEntity{id=1, buildingName='bulding1', buildingLocation='al farhan'}, BuildingEntity{id=2, buildingName='bulding1444', buildingLocation='asasafarhan'}] 
+2021-01-17 11:44:19,006 INFO ae.goldenrealestate.endpoints.rest.impl.TodoController [qtp1002406942-20]  Fetched entities by id TodoEntity{id=1, name='sagayaraj', description='asasas', building=BuildingEntity{id=2, buildingName='bulding1444', buildingLocation='asasafarhan'}} 
+2021-01-17 11:44:21,270 INFO ae.goldenrealestate.service.TodoService [qtp1002406942-18] Creating Project : ae.goldenrealestate.data.dto.ProjectCompositeDto@6f8284b7 
+2021-01-17 11:44:21,280 INFO ae.goldenrealestate.service.TodoService [qtp1002406942-18] Building  : Optional[BuildingEntity{id=2, buildingName='bulding1444', buildingLocation='asasafarhan'}] 
+2021-01-17 11:44:21,286 INFO ae.goldenrealestate.service.TodoService [qtp1002406942-18] User  : Optional[UserEntity{userId=2, userName='sagayarajv', userEmail='sagay81@gmail.com'}] 
+2021-01-17 11:44:21,351 INFO ae.goldenrealestate.endpoints.rest.impl.TodoController [qtp1002406942-20]  Fetched entities [TodoEntity{id=1, name='sagayaraj', description='asasas', building=BuildingEntity{id=2, buildingName='bulding1444', buildingLocation='asasafarhan'}}] 
+2021-01-17 12:55:25,453 INFO ae.goldenrealestate.endpoints.rest.impl.UserController [qtp1002406942-32]  Fetched entities [UserEntity{userId=1, userName='jyothimarnedi', userEmail='sagay81@gmail.com'}, UserEntity{userId=2, userName='sagayarajv', userEmail='sagay81@gmail.com'}] 
+2021-01-17 13:00:29,382 INFO ae.goldenrealestate.endpoints.rest.impl.TodoController [qtp1002406942-23]  Fetched entities [TodoEntity{id=1, name='sagayaraj', description='asasas', building=BuildingEntity{id=2, buildingName='bulding1444', buildingLocation='asasafarhan'}}] 
+2021-01-17 13:21:02,573 INFO ae.goldenrealestate.endpoints.rest.impl.TodoController [qtp1002406942-24]  Fetched entities [TodoEntity{id=1, name='sagayaraj', description='asasas', building=BuildingEntity{id=2, buildingName='bulding1444', buildingLocation='asasafarhan'}}] 
+2021-01-17 13:28:50,129 INFO ae.goldenrealestate.endpoints.rest.impl.TodoController [qtp1002406942-20]  Fetched entities [TodoEntity{id=1, name='sagayaraj', description='asasas', building=BuildingEntity{id=2, buildingName='bulding1444', buildingLocation='asasafarhan'}}] 
+2021-01-17 14:54:45,152 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=46m11s860ms998µs200ns).
+2021-01-17 15:36:15,056 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=18m59s528ms510µs600ns).
+2021-01-17 15:39:09,150 INFO ae.goldenrealestate.endpoints.rest.impl.BuildingController [qtp1002406942-17]  Fetched entities [BuildingEntity{id=1, buildingName='bulding1', buildingLocation='al farhan'}, BuildingEntity{id=2, buildingName='bulding1444', buildingLocation='asasafarhan'}] 
+2021-01-17 15:39:10,760 INFO ae.goldenrealestate.endpoints.rest.impl.UserController [qtp1002406942-32]  Fetched entities [UserEntity{userId=1, userName='jyothimarnedi', userEmail='sagay81@gmail.com'}, UserEntity{userId=2, userName='sagayarajv', userEmail='sagay81@gmail.com'}] 
+2021-01-17 15:39:13,053 INFO ae.goldenrealestate.endpoints.rest.impl.UserController [qtp1002406942-18]  Fetched entities [UserEntity{userId=1, userName='jyothimarnedi', userEmail='sagay81@gmail.com'}, UserEntity{userId=2, userName='sagayarajv', userEmail='sagay81@gmail.com'}] 
+2021-01-17 15:39:14,461 INFO ae.goldenrealestate.endpoints.rest.impl.TodoController [qtp1002406942-32]  Fetched entities [TodoEntity{id=1, name='sagayaraj', description='asasas', building=BuildingEntity{id=2, buildingName='bulding1444', buildingLocation='asasafarhan'}}] 
+2021-01-17 15:39:17,019 INFO ae.goldenrealestate.endpoints.rest.impl.BuildingController [qtp1002406942-18]  Fetched entities [BuildingEntity{id=1, buildingName='bulding1', buildingLocation='al farhan'}, BuildingEntity{id=2, buildingName='bulding1444', buildingLocation='asasafarhan'}] 
+2021-01-17 15:39:17,022 INFO ae.goldenrealestate.endpoints.rest.impl.UserController [qtp1002406942-23]  Fetched entities [UserEntity{userId=1, userName='jyothimarnedi', userEmail='sagay81@gmail.com'}, UserEntity{userId=2, userName='sagayarajv', userEmail='sagay81@gmail.com'}] 
+2021-01-17 15:39:17,040 INFO ae.goldenrealestate.endpoints.rest.impl.TodoController [qtp1002406942-24]  Fetched entities by id TodoEntity{id=1, name='sagayaraj', description='asasas', building=BuildingEntity{id=2, buildingName='bulding1444', buildingLocation='asasafarhan'}} 
+2021-01-17 15:39:19,689 INFO ae.goldenrealestate.service.TodoService [qtp1002406942-24] Creating Project : ae.goldenrealestate.data.dto.ProjectCompositeDto@431bfc8c 
+2021-01-17 15:39:19,698 INFO ae.goldenrealestate.service.TodoService [qtp1002406942-24] Building  : Optional[BuildingEntity{id=2, buildingName='bulding1444', buildingLocation='asasafarhan'}] 
+2021-01-17 15:39:19,706 INFO ae.goldenrealestate.service.TodoService [qtp1002406942-24] User  : Optional[UserEntity{userId=2, userName='sagayarajv', userEmail='sagay81@gmail.com'}] 
+2021-01-17 15:39:19,774 INFO ae.goldenrealestate.endpoints.rest.impl.TodoController [qtp1002406942-17]  Fetched entities [TodoEntity{id=1, name='sagayaraj', description='asasas', building=BuildingEntity{id=2, buildingName='bulding1444', buildingLocation='asasafarhan'}}] 
+2021-01-17 15:39:55,708 INFO ae.goldenrealestate.endpoints.rest.impl.TodoController [qtp1002406942-20]  Fetched entities [TodoEntity{id=1, name='sagayaraj', description='asasas', building=BuildingEntity{id=2, buildingName='bulding1444', buildingLocation='asasafarhan'}}] 
+2021-01-17 15:39:56,602 INFO ae.goldenrealestate.endpoints.rest.impl.BuildingController [qtp1002406942-33]  Fetched entities [BuildingEntity{id=1, buildingName='bulding1', buildingLocation='al farhan'}, BuildingEntity{id=2, buildingName='bulding1444', buildingLocation='asasafarhan'}] 
+2021-01-17 15:39:58,093 INFO ae.goldenrealestate.endpoints.rest.impl.UserController [qtp1002406942-20]  Fetched entities [UserEntity{userId=1, userName='jyothimarnedi', userEmail='sagay81@gmail.com'}, UserEntity{userId=2, userName='sagayarajv', userEmail='sagay81@gmail.com'}] 
+2021-01-17 15:40:00,678 INFO ae.goldenrealestate.endpoints.rest.impl.TodoController [qtp1002406942-33]  Fetched entities [TodoEntity{id=1, name='sagayaraj', description='asasas', building=BuildingEntity{id=2, buildingName='bulding1444', buildingLocation='asasafarhan'}}] 
+2021-01-17 17:05:58,910 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=28m42s836ms903µs200ns).
+2021-01-17 17:06:47,218 INFO ae.goldenrealestate.endpoints.rest.impl.TodoController [qtp1002406942-89]  Fetched entities [] 
+2021-01-17 17:06:48,539 INFO ae.goldenrealestate.endpoints.rest.impl.UserController [qtp1002406942-17]  Fetched entities [] 
+2021-01-17 17:06:51,889 INFO ae.goldenrealestate.endpoints.rest.impl.UserController [qtp1002406942-90]  Fetched entities [UserEntity{userId=1, userName='jyothimarnedi', userEmail='sagay81@gmail.com'}] 
+2021-01-17 17:07:03,218 INFO ae.goldenrealestate.endpoints.rest.impl.UserController [qtp1002406942-23]  Fetched entities [UserEntity{userId=1, userName='jyothimarnedi', userEmail='sagay81@gmail.com'}] 
+2021-01-17 17:07:07,700 INFO ae.goldenrealestate.endpoints.rest.impl.UserController [qtp1002406942-17]  Fetched entities [UserEntity{userId=1, userName='jyothimarnedi', userEmail='sagay81@gmail.com'}, UserEntity{userId=2, userName='jyothimarnedi', userEmail='sagay81@gmail.com'}] 
+2021-01-17 17:07:09,182 INFO ae.goldenrealestate.endpoints.rest.impl.BuildingController [qtp1002406942-18]  Fetched entities [] 
+2021-01-17 17:07:12,712 INFO ae.goldenrealestate.endpoints.rest.impl.BuildingController [qtp1002406942-17]  Fetched entities [BuildingEntity{id=1, buildingName='bulding1', buildingLocation='al farhan'}] 
+2021-01-17 17:07:13,508 INFO ae.goldenrealestate.endpoints.rest.impl.TodoController [qtp1002406942-18]  Fetched entities [] 
+2021-01-17 17:07:14,530 INFO ae.goldenrealestate.endpoints.rest.impl.BuildingController [qtp1002406942-33]  Fetched entities [BuildingEntity{id=1, buildingName='bulding1', buildingLocation='al farhan'}] 
+2021-01-17 17:07:14,544 INFO ae.goldenrealestate.endpoints.rest.impl.UserController [qtp1002406942-90]  Fetched entities [UserEntity{userId=1, userName='jyothimarnedi', userEmail='sagay81@gmail.com'}, UserEntity{userId=2, userName='jyothimarnedi', userEmail='sagay81@gmail.com'}] 
+2021-01-17 17:07:17,619 INFO ae.goldenrealestate.service.TodoService [qtp1002406942-90] Creating Project : ae.goldenrealestate.data.dto.ProjectCompositeDto@5dc3aac7 
+2021-01-17 17:07:17,629 INFO ae.goldenrealestate.service.TodoService [qtp1002406942-90] Building  : Optional[BuildingEntity{id=1, buildingName='bulding1', buildingLocation='al farhan'}] 
+2021-01-17 17:07:17,637 INFO ae.goldenrealestate.service.TodoService [qtp1002406942-90] User  : Optional[UserEntity{userId=2, userName='jyothimarnedi', userEmail='sagay81@gmail.com'}] 
+2021-01-17 17:07:17,687 INFO ae.goldenrealestate.endpoints.rest.impl.TodoController [qtp1002406942-17]  Fetched entities [TodoEntity{id=1, name='sagayaraj', description='asasaasfff', building=BuildingEntity{id=1, buildingName='bulding1', buildingLocation='al farhan'}}] 
+2021-01-17 17:07:21,737 INFO ae.goldenrealestate.endpoints.rest.impl.BuildingController [qtp1002406942-90]  Fetched entities [BuildingEntity{id=1, buildingName='bulding1', buildingLocation='al farhan'}] 
+2021-01-17 17:07:21,743 INFO ae.goldenrealestate.endpoints.rest.impl.UserController [qtp1002406942-20]  Fetched entities [UserEntity{userId=1, userName='jyothimarnedi', userEmail='sagay81@gmail.com'}, UserEntity{userId=2, userName='jyothimarnedi', userEmail='sagay81@gmail.com'}] 
+2021-01-17 17:07:21,748 INFO ae.goldenrealestate.endpoints.rest.impl.TodoController [qtp1002406942-23]  Fetched entities by id TodoEntity{id=1, name='sagayaraj', description='asasaasfff', building=BuildingEntity{id=1, buildingName='bulding1', buildingLocation='al farhan'}} 
+2021-01-17 17:07:24,098 INFO ae.goldenrealestate.service.TodoService [qtp1002406942-115] Creating Project : ae.goldenrealestate.data.dto.ProjectCompositeDto@32e13198 
+2021-01-17 17:07:24,108 INFO ae.goldenrealestate.service.TodoService [qtp1002406942-115] Building  : Optional[BuildingEntity{id=1, buildingName='bulding1', buildingLocation='al farhan'}] 
+2021-01-17 17:07:24,117 INFO ae.goldenrealestate.service.TodoService [qtp1002406942-115] User  : Optional[UserEntity{userId=2, userName='jyothimarnedi', userEmail='sagay81@gmail.com'}] 
+2021-01-17 17:07:24,165 INFO ae.goldenrealestate.endpoints.rest.impl.TodoController [qtp1002406942-18]  Fetched entities [TodoEntity{id=1, name='sagayaraj', description='asasaasfff', building=BuildingEntity{id=1, buildingName='bulding1', buildingLocation='al farhan'}}] 
+2021-01-17 17:09:32,719 INFO ae.goldenrealestate.endpoints.rest.impl.TodoController [qtp1002406942-116]  Fetched entities [] 
+2021-01-17 17:09:33,759 INFO ae.goldenrealestate.endpoints.rest.impl.TodoController [qtp1002406942-20]  Fetched entities [] 
+2021-01-17 17:09:34,697 INFO ae.goldenrealestate.endpoints.rest.impl.BuildingController [qtp1002406942-23]  Fetched entities [] 
+2021-01-17 17:09:35,111 INFO ae.goldenrealestate.endpoints.rest.impl.UserController [qtp1002406942-119]  Fetched entities [] 
+2021-01-17 17:09:38,518 INFO ae.goldenrealestate.endpoints.rest.impl.UserController [qtp1002406942-119]  Fetched entities [UserEntity{userId=1, userName='jyothimarnedi', userEmail='sagay81@gmail.com'}] 
+2021-01-17 17:09:42,233 INFO ae.goldenrealestate.endpoints.rest.impl.UserController [qtp1002406942-119]  Fetched entities [UserEntity{userId=1, userName='jyothimarnedi', userEmail='sagay81@gmail.com'}, UserEntity{userId=2, userName='JYOTHIMARNEDI', userEmail='sagay81@gmail.com'}] 
+2021-01-17 17:09:43,218 INFO ae.goldenrealestate.endpoints.rest.impl.BuildingController [qtp1002406942-23]  Fetched entities [] 
+2021-01-17 17:09:45,951 INFO ae.goldenrealestate.endpoints.rest.impl.BuildingController [qtp1002406942-119]  Fetched entities [BuildingEntity{id=1, buildingName='bulding1', buildingLocation='al farhan'}] 
+2021-01-17 17:09:46,979 INFO ae.goldenrealestate.endpoints.rest.impl.TodoController [qtp1002406942-90]  Fetched entities [] 
+2021-01-17 17:09:47,710 INFO ae.goldenrealestate.endpoints.rest.impl.BuildingController [qtp1002406942-119]  Fetched entities [BuildingEntity{id=1, buildingName='bulding1', buildingLocation='al farhan'}] 
+2021-01-17 17:09:47,711 INFO ae.goldenrealestate.endpoints.rest.impl.UserController [qtp1002406942-18]  Fetched entities [UserEntity{userId=1, userName='jyothimarnedi', userEmail='sagay81@gmail.com'}, UserEntity{userId=2, userName='JYOTHIMARNEDI', userEmail='sagay81@gmail.com'}] 
+2021-01-17 17:09:53,113 INFO ae.goldenrealestate.service.TodoService [qtp1002406942-17] Creating Project : ae.goldenrealestate.data.dto.ProjectCompositeDto@64b7987 
+2021-01-17 17:09:53,123 INFO ae.goldenrealestate.service.TodoService [qtp1002406942-17] Building  : Optional[BuildingEntity{id=1, buildingName='bulding1', buildingLocation='al farhan'}] 
+2021-01-17 17:09:53,129 INFO ae.goldenrealestate.service.TodoService [qtp1002406942-17] User  : Optional[UserEntity{userId=2, userName='JYOTHIMARNEDI', userEmail='sagay81@gmail.com'}] 
+2021-01-17 17:09:53,193 INFO ae.goldenrealestate.endpoints.rest.impl.TodoController [qtp1002406942-18]  Fetched entities [TodoEntity{id=1, name='Abudhabi', description='asasas', building=BuildingEntity{id=1, buildingName='bulding1', buildingLocation='al farhan'}}] 
+2021-01-17 17:09:54,219 INFO ae.goldenrealestate.endpoints.rest.impl.BuildingController [qtp1002406942-17]  Fetched entities [BuildingEntity{id=1, buildingName='bulding1', buildingLocation='al farhan'}] 
+2021-01-17 17:09:54,219 INFO ae.goldenrealestate.endpoints.rest.impl.TodoController [qtp1002406942-90]  Fetched entities by id TodoEntity{id=1, name='Abudhabi', description='asasas', building=BuildingEntity{id=1, buildingName='bulding1', buildingLocation='al farhan'}} 
+2021-01-17 17:09:54,276 INFO ae.goldenrealestate.endpoints.rest.impl.UserController [qtp1002406942-20]  Fetched entities [UserEntity{userId=1, userName='jyothimarnedi', userEmail='sagay81@gmail.com'}, UserEntity{userId=2, userName='JYOTHIMARNEDI', userEmail='sagay81@gmail.com'}] 
+2021-01-17 17:10:06,287 INFO ae.goldenrealestate.endpoints.rest.impl.TodoController [qtp1002406942-23]  Fetched entities [TodoEntity{id=1, name='Abudhabi', description='asasas', building=BuildingEntity{id=1, buildingName='bulding1', buildingLocation='al farhan'}}] 
+2021-01-17 17:10:08,061 INFO ae.goldenrealestate.endpoints.rest.impl.BuildingController [qtp1002406942-116]  Fetched entities [BuildingEntity{id=1, buildingName='bulding1', buildingLocation='al farhan'}] 
+2021-01-17 17:10:09,081 INFO ae.goldenrealestate.endpoints.rest.impl.UserController [qtp1002406942-23]  Fetched entities [UserEntity{userId=1, userName='jyothimarnedi', userEmail='sagay81@gmail.com'}, UserEntity{userId=2, userName='JYOTHIMARNEDI', userEmail='sagay81@gmail.com'}] 
+2021-01-17 17:10:11,009 INFO ae.goldenrealestate.endpoints.rest.impl.TodoController [qtp1002406942-116]  Fetched entities [TodoEntity{id=1, name='Abudhabi', description='asasas', building=BuildingEntity{id=1, buildingName='bulding1', buildingLocation='al farhan'}}] 
+2021-01-17 17:10:20,336 INFO ae.goldenrealestate.endpoints.rest.impl.BuildingController [qtp1002406942-17]  Fetched entities [BuildingEntity{id=1, buildingName='bulding1', buildingLocation='al farhan'}] 
+2021-01-17 17:10:20,339 INFO ae.goldenrealestate.endpoints.rest.impl.TodoController [qtp1002406942-20]  Fetched entities by id TodoEntity{id=1, name='Abudhabi', description='asasas', building=BuildingEntity{id=1, buildingName='bulding1', buildingLocation='al farhan'}} 
+2021-01-17 17:10:20,339 INFO ae.goldenrealestate.endpoints.rest.impl.UserController [qtp1002406942-90]  Fetched entities [UserEntity{userId=1, userName='jyothimarnedi', userEmail='sagay81@gmail.com'}, UserEntity{userId=2, userName='JYOTHIMARNEDI', userEmail='sagay81@gmail.com'}] 
+2021-01-17 17:10:23,912 INFO ae.goldenrealestate.service.TodoService [qtp1002406942-119] Creating Project : ae.goldenrealestate.data.dto.ProjectCompositeDto@ea0794e 
+2021-01-17 17:10:23,922 INFO ae.goldenrealestate.service.TodoService [qtp1002406942-119] Building  : Optional[BuildingEntity{id=1, buildingName='bulding1', buildingLocation='al farhan'}] 
+2021-01-17 17:10:23,930 INFO ae.goldenrealestate.service.TodoService [qtp1002406942-119] User  : Optional[UserEntity{userId=1, userName='jyothimarnedi', userEmail='sagay81@gmail.com'}] 
+2021-01-17 17:10:24,056 ERROR ae.goldenrealestate.endpoints.rest.impl.TodoController [qtp1002406942-119] Exception while Updating Project . Stacktrace: 
+org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:294)
+2021-01-17 17:10:28,741 INFO ae.goldenrealestate.endpoints.rest.impl.TodoController [qtp1002406942-116]  Fetched entities [TodoEntity{id=1, name='Abudhabi', description='asasas', building=BuildingEntity{id=1, buildingName='bulding1', buildingLocation='al farhan'}}] 
+2021-01-17 17:10:31,497 INFO ae.goldenrealestate.endpoints.rest.impl.UserController [qtp1002406942-18]  Fetched entities [UserEntity{userId=1, userName='jyothimarnedi', userEmail='sagay81@gmail.com'}, UserEntity{userId=2, userName='JYOTHIMARNEDI', userEmail='sagay81@gmail.com'}] 
+2021-01-17 17:10:33,941 INFO ae.goldenrealestate.endpoints.rest.impl.UserController [qtp1002406942-116]  Fetched entities by id Optional[UserEntity{userId=1, userName='jyothimarnedi', userEmail='sagay81@gmail.com'}] 
+2021-01-17 17:10:36,506 INFO ae.goldenrealestate.endpoints.rest.impl.UserController [qtp1002406942-20]  Fetched entities [UserEntity{userId=2, userName='JYOTHIMARNEDI', userEmail='sagay81@gmail.com'}, UserEntity{userId=1, userName='jyothimarnedi3', userEmail='sagay81@gmail.com'}] 
+2021-01-17 17:11:09,526 INFO org.eclipse.jetty.server.AbstractConnector [SpringContextShutdownHook] Stopped ServerConnector@51ec2856{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2021-01-17 17:11:09,526 INFO org.eclipse.jetty.server.session.HouseKeeper [SpringContextShutdownHook] node0 Stopped scavenging
+2021-01-17 17:11:09,526 INFO org.eclipse.jetty.server.handler.ContextHandler$Context [SpringContextShutdownHook] Destroying Spring FrameworkServlet 'dispatcherServlet'
+2021-01-17 17:11:09,542 INFO org.eclipse.jetty.server.handler.ContextHandler [SpringContextShutdownHook] Stopped o.s.b.w.e.j.JettyEmbeddedWebAppContext@2ecf5915{application,/,[file:///C:/Users/sagayaraj/AppData/Local/Temp/jetty-docbase.8080.15701624680928742426/],STOPPED}
+2021-01-17 17:11:09,542 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-17 17:11:09,542 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringContextShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-01-17 17:11:09,564 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2021-01-17 17:11:09,590 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
