@@ -58,7 +58,6 @@ Application can be downloaded and run has two instances
 To Run backend module follow the steps
 - Traverse to project folder
 -  CD to folder todo-app-bootstrap
-- ~~ `mvn jetty:run`~~
 -  `mvn spring-boot:run`
 
 ##### Frontend Module
