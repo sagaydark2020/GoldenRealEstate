@@ -43,7 +43,7 @@ Project Screens
 ------------
 
 
-### Running the Application
+### Running the Application [Database must be configured before running]
 
 After Downloading the application, Goto the root folder and perform the following commands''
 
@@ -58,7 +58,8 @@ Application can be downloaded and run has two instances
 To Run backend module follow the steps
 - Traverse to project folder
 -  CD to folder todo-app-bootstrap
--  `mvn jetty:run`
+- ~~ `mvn jetty:run`~~
+-  `mvn spring-boot:run`
 
 ##### Frontend Module
 To Run FrontEnd Module follow the steps
@@ -77,7 +78,7 @@ Application.properties has configuration for the database endpoint url/access cr
 
 `spring.datasource.password= sylvain`
 
-installing database on docker
+Installing Docker PostGreSQL to use with application
 
 `docker run -p 5432:5432 --name postgre-db -e POSTGRES_PASSWORD=admin -d postgres:11.5`
 
@@ -88,7 +89,8 @@ Configure privilege and database
 
 `docker exec -it postgre-db bash`
 
-'sudo -u postgres psql`
+[Updated]
+`/usr/bin/psql postgres postgres` 
 
 `postgres=# create database tests;`
 
