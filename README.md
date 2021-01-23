@@ -115,7 +115,7 @@ Configure privilege and database
 - UX : Late 2020/2021 trend has been Glass Morphism or Abstract Glass design. Focussed in bringing which is fusion of Glass/Normal design removed clutters
 - UI : Being familiar in Dojo, HTML/CSS, Vanilla Javascript. Though have having worked in ReactJS, it was good learning.
 -    : React Utilities such as Formik was challenge due to limited documentations
-- Spring Boot/Java :  Its Plain Springboot application performing CRUD opertions
+- Spring Boot/Java :  Spring Boot application capable performing CRUD, Advanced Filtering utilizing specification 
 - Structure : Project follows layered architecture
 - Possible Additions : Visualized to perform Security/Role Based Access not achieved in this version
 
